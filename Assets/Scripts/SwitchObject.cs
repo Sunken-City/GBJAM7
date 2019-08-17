@@ -25,7 +25,7 @@ public class SwitchObject : MonoBehaviour
         {
             MicrogameController.instance.WinMicrogame();
             GetComponent<SpriteRenderer>().sprite = alternateState;
-            background.GetComponent<SpriteRenderer>().color = new Color(0.875f, 0.96875f, 0.8125f);
+            background.GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 }
