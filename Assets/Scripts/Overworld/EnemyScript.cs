@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public string microgameSceneName;
-    public float playerDetectionRadius = 0.5f;
+    public float playerDetectionRadius = 0.6f;
+    public float movementSpeed = 0.005f;
     private bool _hasBeenTriggered = false;
     private GameObject _playerReference = null;
 
@@ -27,7 +28,9 @@ public class EnemyScript : MonoBehaviour
         Input.GetKey(KeyCode.S) ||
         Input.GetKey(KeyCode.D)))
         {
-            //(playerReference.transform.position - transform.position);
+            Vector2 displacement = (_playerReference.transform.position - transform.position);
+            displacement.Normalize();
+            transform.position += (Vector3)(displacement * movementSpeed);
         }
     }
 
