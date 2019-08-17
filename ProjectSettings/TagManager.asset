@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - SubScene
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Microgame
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2302732233
+    locked: 0
+  - name: Interactable Object
+    uniqueID: 2215256519
+    locked: 0
+  - name: Player
+    uniqueID: 2493457203
+    locked: 0
+  - name: Microgame Background
+    uniqueID: 2081172107
+    locked: 0
+  - name: Microgame Interactable Object
+    uniqueID: 3862718387
+    locked: 0
+  - name: Microgame Player
+    uniqueID: 3171777649
+    locked: 0
+  - name: Microgame Foreground
+    uniqueID: 1186347573
+    locked: 0
+  - name: UI
+    uniqueID: 2900566521
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
