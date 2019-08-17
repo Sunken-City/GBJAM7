@@ -8,6 +8,8 @@ public class EnemyScript : MonoBehaviour
     public float playerDetectionRadius = 0.6f;
     public float movementSpeed = 0.005f;
     private bool _hasBeenTriggered = false;
+    private bool _isInvulnerable = false;
+    private int _frameCounter = 0;
     private GameObject _playerReference = null;
 
 
@@ -21,7 +23,16 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((!OverworldController.instance.freezeInput &&
+        ++_frameCounter;
+        if(_isInvulnerable)
+        {
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+            bool isVisible = sprite.enabled;
+            sprite.enabled = (_frameCounter % 4) == 0 ? !sprite.enabled : sprite.enabled;
+            return;
+        }
+
+        if((!OverworldController.instance.freezeInput && 
         Vector2.Distance(_playerReference.transform.position, transform.position) < playerDetectionRadius) &&
         (Input.GetKey(KeyCode.W) ||
         Input.GetKey(KeyCode.A) ||
@@ -34,9 +45,24 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    public void Reset()
+    {
+        StartCoroutine("TemporaryInvulnerability");
+    }
+    
+    IEnumerator TemporaryInvulnerability()
+    {
+        _isInvulnerable = true;
+        yield return new WaitForSeconds(3.0f);
+
+        _hasBeenTriggered = false;
+        _isInvulnerable = false;
+        GetComponent<SpriteRenderer>().enabled = true;
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(_hasBeenTriggered)
+        if(_hasBeenTriggered || col.gameObject.tag != "Player")
         {
             return;
         }

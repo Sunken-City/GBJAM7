@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class OverworldController : MonoBehaviour
 {
-    enum State
+    public enum State
     {
         PLAYING = 0,
         MICROGAME_TRANSITION,
@@ -13,16 +13,17 @@ public class OverworldController : MonoBehaviour
         PLAYING_TRANSITION,
         NUM_STATES
     }
+    public static OverworldController instance = null;
 
     [HideInInspector]
     public bool freezeInput {get; set;}
-    public static OverworldController instance = null;
 
+    [HideInInspector]    
+    public MicrogameController.State lastMicrogameState = MicrogameController.State.NOT_STARTED;
     private State _state = State.PLAYING;
     private float _timeInState = 0.0f;
     private AsyncOperation _asyncMicrogameLoad = null;
     private string _currentMicrogameName = null;
-
     private GameObject _currentActivatingEnemy = null;
     private GameObject _playerReference = null;
     private GameObject _cameraReference = null;
@@ -77,7 +78,15 @@ public class OverworldController : MonoBehaviour
         StartCoroutine(UnloadMicrogameAsync(_currentMicrogameName));
         _currentMicrogameName = null;
         _asyncMicrogameLoad = null;
-        Destroy(_currentActivatingEnemy);
+
+        if(lastMicrogameState == MicrogameController.State.WON)
+        {
+            Destroy(_currentActivatingEnemy);
+        }
+        else
+        {
+            _currentActivatingEnemy.GetComponent<EnemyScript>().Reset();
+        }
         _currentActivatingEnemy = null;
     }
         

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MicrogameController : MonoBehaviour
 {
-    enum State
+    public enum State
     {
         NOT_STARTED = 0,
         PLAYING,
@@ -33,7 +33,7 @@ public class MicrogameController : MonoBehaviour
         Debug.Assert(instance == this, "We somehow made a second instance of the microgame controller? :T");
         instance = null;
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -46,6 +46,15 @@ public class MicrogameController : MonoBehaviour
 
     public void ReturnToOverworld()
     {
+        if(HasNotYetWon() || HasLost())
+        {
+            OverworldController.instance.lastMicrogameState = State.LOST;
+        }
+        else
+        {
+            OverworldController.instance.lastMicrogameState = State.WON;
+
+        }
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("PrototypeOverworld"));
         OverworldController.instance.EndMicrogame();
         Destroy(microgameSubScene);
