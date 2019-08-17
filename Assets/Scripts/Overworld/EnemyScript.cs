@@ -6,22 +6,22 @@ public class EnemyScript : MonoBehaviour
 {
     public string microgameSceneName;
     public float playerDetectionRadius = 0.5f;
-    private bool hasBeenTriggered = false;
-    private GameObject playerReference = null;
+    private bool _hasBeenTriggered = false;
+    private GameObject _playerReference = null;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerReference = GameObject.FindGameObjectWithTag("Player");
-        Debug.Assert(playerReference, "Enemies in the scene need to have the player tagged as 'Player'");
+        _playerReference = GameObject.FindGameObjectWithTag("Player");
+        Debug.Assert(_playerReference, "Enemies in the scene need to have the player tagged as 'Player'");
     }
 
     // Update is called once per frame
     void Update()
     {
         if((!OverworldController.instance.freezeInput &&
-        Vector2.Distance(playerReference.transform.position, transform.position) < playerDetectionRadius) &&
+        Vector2.Distance(_playerReference.transform.position, transform.position) < playerDetectionRadius) &&
         (Input.GetKey(KeyCode.W) ||
         Input.GetKey(KeyCode.A) ||
         Input.GetKey(KeyCode.S) ||
@@ -33,12 +33,12 @@ public class EnemyScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(hasBeenTriggered)
+        if(_hasBeenTriggered)
         {
             return;
         }
 
-        hasBeenTriggered = !hasBeenTriggered;
+        _hasBeenTriggered = !_hasBeenTriggered;
         OverworldController.instance.BeginMicrogame(microgameSceneName, this.gameObject);
     }
 }

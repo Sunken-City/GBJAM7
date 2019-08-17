@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PrototypeOverworld.unity
     guid: 8010da179999e2f4bbfc4f8ff2459516
   - enabled: 1
-    path: Assets/Scenes/PrototypeMicrogame.unity
+    path: Assets/Scenes/LightEmUp.unity
     guid: 4d2add4a6ddc37f48be5665e6672309b
   - enabled: 1
     path: Assets/Scenes/CreditConfidence.unity

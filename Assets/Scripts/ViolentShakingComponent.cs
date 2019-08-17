@@ -5,11 +5,11 @@ using UnityEngine;
 public class ViolentShakingComponent : MonoBehaviour
 {
     public float shakeMagnitude;
-    private Vector2 homePosition;
+    private Vector2 _homePosition;
     // Start is called before the first frame update
     void Start()
     {
-        homePosition = transform.position;
+        _homePosition = transform.position;
     }
 
     // Update is called once per frame
@@ -17,6 +17,6 @@ public class ViolentShakingComponent : MonoBehaviour
     {
         float displacementX = Random.Range(-1.0f, 1.0f) * shakeMagnitude;
         float displacementY = Random.Range(-1.0f, 1.0f) * shakeMagnitude;
-        transform.position = homePosition + new Vector2(displacementX, displacementY);
+        transform.position = _homePosition + new Vector2(displacementX, displacementY);
     }
 }

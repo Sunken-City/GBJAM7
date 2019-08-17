@@ -9,10 +9,10 @@ public class OverworldController : MonoBehaviour
     public bool freezeInput {get; set;}
     public static OverworldController instance = null;
 
-    private AsyncOperation asyncMicrogameLoad = null;
-    private string currentMicrogameName = null;
+    private AsyncOperation _asyncMicrogameLoad = null;
+    private string _currentMicrogameName = null;
 
-    private GameObject currentActivatingEnemy = null;
+    private GameObject _currentActivatingEnemy = null;
 
     // Start is called before the first frame update
     void Start()
@@ -34,25 +34,25 @@ public class OverworldController : MonoBehaviour
         freezeInput = true;
         StartCoroutine(LoadMicrogameAsync(microgameName));
         StartCoroutine(ExecuteMicrogameScene(microgameName));
-        currentMicrogameName = microgameName;
-        currentActivatingEnemy = activatingEnemy;
+        _currentMicrogameName = microgameName;
+        _currentActivatingEnemy = activatingEnemy;
     }
 
     public void EndMicrogame()
     {
         freezeInput = false;
-        StartCoroutine(UnloadMicrogameAsync(currentMicrogameName));
-        currentMicrogameName = null;
-        asyncMicrogameLoad = null;
-        Destroy(currentActivatingEnemy);
-        currentActivatingEnemy = null;
+        StartCoroutine(UnloadMicrogameAsync(_currentMicrogameName));
+        _currentMicrogameName = null;
+        _asyncMicrogameLoad = null;
+        Destroy(_currentActivatingEnemy);
+        _currentActivatingEnemy = null;
     }
         
     IEnumerator ExecuteMicrogameScene(string microgameSceneName)
     {
         yield return new WaitForSeconds(1.0f);
-        asyncMicrogameLoad.allowSceneActivation = true;
-        while (!asyncMicrogameLoad.isDone)
+        _asyncMicrogameLoad.allowSceneActivation = true;
+        while (!_asyncMicrogameLoad.isDone)
         {
             yield return null;
         }
@@ -61,10 +61,10 @@ public class OverworldController : MonoBehaviour
 
     IEnumerator LoadMicrogameAsync(string microgameSceneName)
     {
-        asyncMicrogameLoad = SceneManager.LoadSceneAsync(microgameSceneName, LoadSceneMode.Additive);
-        asyncMicrogameLoad.allowSceneActivation = false;
+        _asyncMicrogameLoad = SceneManager.LoadSceneAsync(microgameSceneName, LoadSceneMode.Additive);
+        _asyncMicrogameLoad.allowSceneActivation = false;
         // Wait until the asynchronous scene fully loads
-        while (!asyncMicrogameLoad.isDone)
+        while (!_asyncMicrogameLoad.isDone)
         {
             yield return null;
         }

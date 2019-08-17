@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class InstructionText : MonoBehaviour
 {
     public Text subText;
-    private int frameCounter = 0;
     public int finalTextSize = 15;
+    private int _frameCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class InstructionText : MonoBehaviour
     void Update()
     {
         //Scale down from a large size
-        int fontSize = 30 - ++frameCounter;
+        int fontSize = 30 - ++_frameCounter;
         fontSize = Mathf.Max(fontSize, finalTextSize);
         GetComponent<Text>().fontSize = fontSize;
         if(subText)
@@ -28,7 +28,7 @@ public class InstructionText : MonoBehaviour
         }
 
         //Text wigglies
-        if(frameCounter % 4 != 0)
+        if(_frameCounter % 4 != 0)
         {
             return;
         }

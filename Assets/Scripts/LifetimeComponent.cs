@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifetimeComponent : MonoBehaviour
 {
     public float lifetimeSeconds = 1.5f;
-    private float currentTimerSeconds = 0.0f;
+    private float _currentTimerSeconds = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +15,8 @@ public class LifetimeComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTimerSeconds += Time.deltaTime;
-        if(currentTimerSeconds > lifetimeSeconds)
+        _currentTimerSeconds += Time.deltaTime;
+        if(_currentTimerSeconds > lifetimeSeconds)
         {
             Destroy(this.gameObject);
         }        

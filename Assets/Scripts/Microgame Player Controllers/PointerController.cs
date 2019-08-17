@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PointerController : MonoBehaviour
 {
+    public bool freezeOnVictory = false;
+    public bool freezeOnLoss = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,11 @@ public class PointerController : MonoBehaviour
 
     void UpdateInput() 
     {
+        if((freezeOnVictory && MicrogameController.instance.HasWon()) || (freezeOnLoss && MicrogameController.instance.HasLost()))
+        {
+            return;
+        }
+
         if(Input.GetKey(KeyCode.A))
         {
             transform.position += new Vector3(-0.01f, 0, 0);
