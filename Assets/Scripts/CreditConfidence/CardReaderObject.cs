@@ -23,7 +23,6 @@ public class CardReaderObject : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("We did it");
         if(boundingBox.offset.x >= 0.2f)
         {
             boundingBox.offset = new Vector2(-0.2f, boundingBox.offset.y);
