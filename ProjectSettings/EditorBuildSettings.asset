@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FrogDate.unity
     guid: ec66bdd9acb4816428668c019e545b4a
+  - enabled: 1
+    path: Assets/Scenes/PrinceOfFreshAir.unity
+    guid: 0750debb15f0b0e4e9dcc1a09ab135f5
+  - enabled: 1
+    path: Assets/Scenes/Don'tDoIt.unity
+    guid: 0707facd923671646b73c2c02f25507f
   m_configObjects: {}
