@@ -13,7 +13,13 @@ public class LoseOnInputController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("W") || Input.GetKey("A") || Input.GetKey("S") || Input.GetKey("D") || Input.GetKey("J") || Input.GetKey("K"))
+        bool pressedW = Input.GetKey(KeyCode.W);
+        bool pressedA = Input.GetKey(KeyCode.A);
+        bool pressedS = Input.GetKey(KeyCode.S);
+        bool pressedD = Input.GetKey(KeyCode.D);
+        bool pressedJ = Input.GetKey(KeyCode.J);
+        bool pressedK = Input.GetKey(KeyCode.K);
+        if(pressedW || pressedA || pressedS || pressedD || pressedJ || pressedK)
         {
             MicrogameController.instance.LoseMicrogame();
         }
