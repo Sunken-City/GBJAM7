@@ -25,65 +25,51 @@ public class OverworldPlayerController : MonoBehaviour
 
     void UpdateAnimation()
     {
-        float xAxis = Input.GetAxis("Horizontal");
-        float yAxis = Input.GetAxis("Vertical");
-
-        if(xAxis != 0 || yAxis != 0)
-        {
-            animator.SetBool("walking", true);
-
-            if (xAxis == 0 && yAxis > 0)
-            {
-                //Player is facing up
-                animator.SetFloat("x", 0f);
-                animator.SetFloat("y", 1f);
-            }
-            else if (xAxis == 0 && yAxis < 0)
-            {
-                //Player is facing down
-                animator.SetFloat("x", 0f);
-                animator.SetFloat("y", -1f);
-            }
-            else if (xAxis > 0 && yAxis == 0)
-            {
-                //Player is facing right
-                animator.SetFloat("x", 1f);
-                animator.SetFloat("y", 0f);
-            }
-            else
-            {
-                //Player is facing left
-                animator.SetFloat("x", -1f);
-                animator.SetFloat("y", 0f);
-            }
-        }
-        else
-        {
-            animator.SetBool("walking", false);
-        }
     }
 
     void UpdateInput() 
     {
+        bool isWalking = false;
         if(OverworldController.instance.freezeInput)
         {
+            animator.SetBool("walking", false);
             return;
         }
         if(Input.GetKey(KeyCode.A))
         {
+            isWalking = true;
             transform.position += new Vector3(-0.01f, 0, 0);
+            animator.SetFloat("x", -1f);
+            animator.SetFloat("y", 0f);
         }
-        if(Input.GetKey(KeyCode.D))
+        else if(Input.GetKey(KeyCode.D))
         {
+            isWalking = true;
             transform.position += new Vector3(0.01f, 0, 0);
+            animator.SetFloat("x", 1f);
+            animator.SetFloat("y", 0f);
         }
         if(Input.GetKey(KeyCode.W))
         {
+            isWalking = true;
             transform.position += new Vector3(0, 0.01f, 0);
+            animator.SetFloat("x", 0f);
+            animator.SetFloat("y", 1f);
         }
-        if(Input.GetKey(KeyCode.S))
+        else if(Input.GetKey(KeyCode.S))
         {
+            isWalking = true;
             transform.position += new Vector3(0, -0.01f, 0);
+            animator.SetFloat("x", 0f);
+            animator.SetFloat("y", -1f);
+        }
+        if(isWalking)
+        {
+            animator.SetBool("walking", true);
+        }
+        else
+        {
+            animator.SetBool("walking", false);
         }
     }
 }
