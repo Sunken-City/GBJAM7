@@ -18,15 +18,6 @@ public class OverworldPlayerController : MonoBehaviour
         UpdateInput();
     }
 
-    void FixedUpdate()
-    {
-        UpdateAnimation();
-    }
-
-    void UpdateAnimation()
-    {
-    }
-
     void UpdateInput() 
     {
         bool isWalking = false;
