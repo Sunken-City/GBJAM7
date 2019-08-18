@@ -520,7 +520,7 @@ MonoBehaviour:
     type: 3}
   loseObject: {fileID: 1394839053}
   winObject: {fileID: 975501457}
-  numCards: 4
+  numCards: 5
 --- !u!1 &931490831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,6 +1110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shakeMagnitude: 0.02
+  magnitudeDelta: 0
 --- !u!212 &1394839056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1204,6 +1205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shakeMagnitude: 0.005
+  magnitudeDelta: 0
 --- !u!212 &1402515013
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1482,6 +1484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
+  winOnTimeOut: 0
   timeLimitSeconds: 5
 --- !u!4 &2002511259
 Transform:
