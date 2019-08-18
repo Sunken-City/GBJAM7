@@ -19,7 +19,7 @@ public class HorizontalPlayerController : MonoBehaviour
         {
             transform.position += new Vector3(-0.1f, 0, 0);
         }
-        if(Input.GetKey(KeyCode.D))
+        else if(Input.GetKey(KeyCode.D))
         {
             transform.position += new Vector3(0.1f, 0, 0);
         }
