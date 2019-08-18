@@ -13,8 +13,9 @@ public class MicrogameController : MonoBehaviour
         LOST,
         NUM_STATES
     }
-    public GameObject microgameSubScene = null;
     public static MicrogameController instance = null;
+    public GameObject microgameSubScene = null;
+    public bool winOnTimeOut = false;
     private State _microgameState = State.NOT_STARTED;
     public float timeLimitSeconds = 5.0f;
     private float _currentTimerSeconds = 0.0f;
@@ -47,7 +48,7 @@ public class MicrogameController : MonoBehaviour
 
     public void ReturnToOverworld()
     {
-        if(HasNotYetWon() || HasLost())
+        if((HasNotYetWon() && !winOnTimeOut) || HasLost())
         {
             OverworldController.instance.lastMicrogameState = State.LOST;
         }

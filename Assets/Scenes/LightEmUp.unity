@@ -900,6 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
+  winOnTimeOut: 0
   timeLimitSeconds: 5
 --- !u!4 &2002511259
 Transform:
