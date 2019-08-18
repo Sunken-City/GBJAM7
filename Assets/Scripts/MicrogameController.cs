@@ -38,7 +38,8 @@ public class MicrogameController : MonoBehaviour
     void Update()
     {
         _currentTimerSeconds += Time.deltaTime;
-        if(_currentTimerSeconds > timeLimitSeconds)
+        //This is a hack to prevent debug spew. If you're debugging an individual scene, you won't have an Overworld Controller.
+        if(OverworldController.instance && _currentTimerSeconds > timeLimitSeconds)
         {
             ReturnToOverworld();
         }

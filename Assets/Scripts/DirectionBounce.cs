@@ -5,7 +5,7 @@ using UnityEngine;
 public class DirectionBounce : MonoBehaviour
 {
     public Vector2 bounceDirection;
-    public float deformationDelta = 0.1f;
+    public Vector2 scaleDelta;
 
     private Vector2 _homePosition;
     private Vector2 _homeScale;
@@ -21,6 +21,6 @@ public class DirectionBounce : MonoBehaviour
     void Update()
     {
         transform.position =  Vector2.Lerp(_homePosition + bounceDirection, _homePosition - bounceDirection, Mathf.PingPong(Time.time, 1.0f));
-        transform.localScale =  Vector2.Lerp(_homeScale + (bounceDirection * deformationDelta), _homeScale - (bounceDirection * deformationDelta), Mathf.PingPong(Time.time, 1.0f));
+        transform.localScale =  Vector2.Lerp(_homeScale + scaleDelta, _homeScale - scaleDelta, Mathf.PingPong(Time.time, 1.0f));
     }
 }
