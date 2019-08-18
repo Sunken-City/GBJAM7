@@ -54,9 +54,9 @@ public class MicrogameController : MonoBehaviour
         else
         {
             OverworldController.instance.lastMicrogameState = State.WON;
-
         }
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("PrototypeOverworld"));
+
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(OverworldController.instance.currentSceneName));
         OverworldController.instance.EndMicrogame();
         Destroy(microgameSubScene);
     }

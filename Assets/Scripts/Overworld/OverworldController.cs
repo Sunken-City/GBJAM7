@@ -18,6 +18,9 @@ public class OverworldController : MonoBehaviour
     [HideInInspector]
     public bool freezeInput {get; set;}
 
+    [HideInInspector]
+    public string currentSceneName = "";
+
     [HideInInspector]    
     public MicrogameController.State lastMicrogameState = MicrogameController.State.NOT_STARTED;
     private State _state = State.PLAYING;
@@ -34,6 +37,7 @@ public class OverworldController : MonoBehaviour
         if(!instance)
         {
             instance = this;
+            currentSceneName = SceneManager.GetActiveScene().name;
         }
 
         _playerReference = GameObject.FindGameObjectWithTag("Player");
