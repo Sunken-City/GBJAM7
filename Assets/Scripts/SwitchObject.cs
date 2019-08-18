@@ -7,6 +7,8 @@ public class SwitchObject : MonoBehaviour
     public Sprite alternateState;
     public GameObject background;
 
+    public string specificTag = string.Empty;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,24 @@ public class SwitchObject : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        if(!string.IsNullOrEmpty(specificTag) && col.tag != specificTag)
+        {
+            return;
+        }
+
         if(MicrogameController.instance.HasNotYetWon())
         {
             MicrogameController.instance.WinMicrogame();
-            GetComponent<SpriteRenderer>().sprite = alternateState;
-            background.GetComponent<SpriteRenderer>().color = Color.white;
+
+            //switch specific stuff lel what a meme what a hack.
+            if(alternateState)
+            {
+                GetComponent<SpriteRenderer>().sprite = alternateState;
+            }
+            if(background)
+            {
+                background.GetComponent<SpriteRenderer>().color = Color.white;
+            }                
         }
     }
 }
