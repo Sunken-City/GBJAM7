@@ -958,6 +958,7 @@ GameObject:
   - component: {fileID: 1237571543}
   - component: {fileID: 1237571545}
   - component: {fileID: 1237571544}
+  - component: {fileID: 1237571546}
   m_Layer: 8
   m_Name: Nose
   m_TagString: Player
@@ -1010,6 +1011,20 @@ MonoBehaviour:
   alternateState: {fileID: 0}
   background: {fileID: 0}
   specificTag: Player
+--- !u!114 &1237571546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237571542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73bbd3f26aea90468a89b89a2bb0684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 1258105801161584090, guid: 9daf5c8983c725f47b048e2316e04818,
+    type: 3}
 --- !u!1 &1312271919
 GameObject:
   m_ObjectHideFlags: 0
