@@ -9,8 +9,9 @@ public class QuestionAnswerController : MonoBehaviour
     public Sprite selector;
     private Text _questionComponent;
     private Text _answerComponent;
+    private string[] _advice;
     private int _badAnswerIndex = 3;
-    private int _curAnswerIndex;
+    private int _curAnswerIndex = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -20,18 +21,25 @@ public class QuestionAnswerController : MonoBehaviour
         _answerComponent = components[1];
         string[] lines = adviceFile.text.Split('\n');
         string line = lines[Random.Range(0, lines.Length)];
-        string[] splitString = line.Split('|');
-        Shuffle(ref splitString);
-        _questionComponent.text = splitString[0];
-        _answerComponent.text = splitString[1] + '\n' + splitString[2] + '\n' + splitString[3];
+        _advice = line.Split('|');
+        Shuffle();
+        _questionComponent.text = _advice[0];
+        _answerComponent.text = _advice[1] + '\n' + _advice[2] + '\n' + _advice[3];
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.S))
+        {
+
+        }
+
         if(Input.GetKey(KeyCode.J))
         {
+            _questionComponent.text = _advice[_curAnswerIndex];
+            _answerComponent.text = "That's a great idea!";
             if (_curAnswerIndex == _badAnswerIndex)
             {
                 MicrogameController.instance.WinMicrogame();
@@ -43,15 +51,15 @@ public class QuestionAnswerController : MonoBehaviour
         }
     }
 
-    void Shuffle(ref string[] array)
+    void Shuffle()
     {
         //Start at 1 so we don't shuffle the question 
-        for(int i = 1; i < array.Length; ++i)
+        for(int i = 1; i < _advice.Length; ++i)
         {
-            int randIndex = Random.Range(1, array.Length);
-            string temp = array[randIndex];
-            array[randIndex] = array[i];
-            array[i] = temp;
+            int randIndex = Random.Range(1, _advice.Length);
+            string temp = _advice[randIndex];
+            _advice[randIndex] = _advice[i];
+            _advice[i] = temp;
             if (randIndex == _badAnswerIndex)
             {
                 _badAnswerIndex = i;
