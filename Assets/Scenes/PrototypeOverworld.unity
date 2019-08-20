@@ -5130,7 +5130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Gramps
-  text: Sorry kiddo, Gramps needs his nap.
+  textBlocks:
+  - Sorry kiddo, Gramps needs his nap.
+  - Come back with a cuppa joe later, nerd.
   interactRadius: 0.2
   soundEffect: {fileID: 0}
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
