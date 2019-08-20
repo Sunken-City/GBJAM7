@@ -1642,6 +1642,7 @@ GameObject:
   - component: {fileID: 748849726}
   - component: {fileID: 748849728}
   - component: {fileID: 748849727}
+  - component: {fileID: 748849729}
   m_Layer: 0
   m_Name: BaseLayer
   m_TagString: Untagged
@@ -4714,6 +4715,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &748849729
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748849725}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 836049332f0e1a44cb16bf7847d46c6f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1296840239
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,7 +5363,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6680598758711089733, guid: 44edf10859d157a4a8ee7818875219cb,
+      objectReference: {fileID: -882246348154256868, guid: 20a3f561f80a8e14ab1c62630bdfa78a,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86c56809a2047e645afa658f43b2e861, type: 3}
