@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Don'tDoIt.unity
     guid: 0707facd923671646b73c2c02f25507f
+  - enabled: 1
+    path: Assets/Scenes/Mislead.unity
+    guid: a7a9b86079664a443933a20d07826c84
   m_configObjects: {}
