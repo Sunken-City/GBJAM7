@@ -7,6 +7,8 @@ public class QuestionAnswerController : MonoBehaviour
 {
     public TextAsset adviceFile;
     public GameObject selector;
+    public GameObject victory;
+    public GameObject loss;
     private ScrollTextController _questionComponent;
     private Text _answerComponent;
     private string[] _advice;
@@ -59,10 +61,12 @@ public class QuestionAnswerController : MonoBehaviour
             if (_curAnswerIndex == _badAnswerIndex)
             {
                 MicrogameController.instance.WinMicrogame();
+                victory.GetComponent<SpriteRenderer>().enabled = true;
             }
             else
             {
                 MicrogameController.instance.LoseMicrogame();
+                loss.GetComponent<SpriteRenderer>().enabled = true;
             }
         }
     }

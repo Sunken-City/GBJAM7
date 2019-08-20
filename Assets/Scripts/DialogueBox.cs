@@ -38,8 +38,9 @@ public class DialogueBox : MonoBehaviour
         _nameText.text = name;
     }
 
-    public void SetDialogue(string text)
+    public void SetCurrentDialogue(string text)
     {
+        _frameCounter = 0;
         _dialogueString = text;
         _dialogueText.text = "";
     }
