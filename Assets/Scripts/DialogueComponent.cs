@@ -7,6 +7,7 @@ public class DialogueComponent : MonoBehaviour
     public string characterName;
     public string text;
     public float interactRadius = 0.2f;
+    public AudioClip soundEffect = null;
     public GameObject dialogueBoxPrefab;
     private GameObject _dialogueBoxInstance = null;
     private GameObject _playerReference = null;
@@ -28,6 +29,10 @@ public class DialogueComponent : MonoBehaviour
                 _dialogueBoxInstance = Instantiate(dialogueBoxPrefab);
                 _dialogueBoxInstance.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
                 DialogueBox dialogue = _dialogueBoxInstance.GetComponent<DialogueBox>();
+                if(soundEffect)
+                {
+                    dialogue.SetSample(soundEffect);
+                }
                 dialogue.SetName(characterName);
                 dialogue.SetDialogue(text);
                 OverworldController.instance.freezeInput = true;

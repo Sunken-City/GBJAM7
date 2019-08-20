@@ -4999,7 +4999,7 @@ GameObject:
   - component: {fileID: 1570564767}
   - component: {fileID: 1570564769}
   m_Layer: 0
-  m_Name: testPlayer
+  m_Name: oldPlayerRIP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5132,6 +5132,7 @@ MonoBehaviour:
   characterName: Gramps
   text: Sorry kiddo, Gramps needs his nap.
   interactRadius: 0.2
+  soundEffect: {fileID: 0}
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
 --- !u!1001 &1588740857
