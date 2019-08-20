@@ -21,4 +21,9 @@ public class ScrollTextController : MonoBehaviour
         _textComponent.text = text.Substring(0, _pos);
         _pos++;
     }
+
+    public void Reset()
+    {
+        _pos = 0;
+    }
 }
