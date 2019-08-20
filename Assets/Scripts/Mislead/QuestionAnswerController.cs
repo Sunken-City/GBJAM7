@@ -23,7 +23,7 @@ public class QuestionAnswerController : MonoBehaviour
         _questionComponent = GetComponentInChildren<ScrollTextController>();
         _answerComponent = components[1];
         string[] lines = adviceFile.text.Split('\n');
-        string line = lines[Random.Range(0, lines.Length)];
+        string line = lines[Random.Range(0, lines.Length - 1)];
         _advice = line.Split('|');
         Shuffle();
         _questionComponent.text = _advice[0];
@@ -82,13 +82,17 @@ public class QuestionAnswerController : MonoBehaviour
         //Start at 1 so we don't shuffle the question 
         for(int i = 1; i < _advice.Length; ++i)
         {
-            int randIndex = Random.Range(1, _advice.Length);
+            int randIndex = Random.Range(1, _advice.Length - 1);
             string temp = _advice[randIndex];
             _advice[randIndex] = _advice[i];
             _advice[i] = temp;
-            if (randIndex == _badAnswerIndex)
+            if(randIndex == _badAnswerIndex)
             {
                 _badAnswerIndex = i;
+            }
+            else if(i == _badAnswerIndex)
+            {
+                _badAnswerIndex = randIndex;
             }
         }
     }
