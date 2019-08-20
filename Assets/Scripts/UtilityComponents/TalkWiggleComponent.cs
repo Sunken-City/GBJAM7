@@ -12,7 +12,7 @@ public class TalkWiggleComponent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _voiceDisplacementVector = new Vector2(Random.Range(-0.05f, 0.05f), Random.Range(0.2f, 0.4f));
+        _voiceDisplacementVector = new Vector2(Random.Range(-0.05f, 0.05f), Random.Range(0.02f, 0.04f));
         _initialPosition = transform.localPosition;
     }
 
@@ -21,7 +21,7 @@ public class TalkWiggleComponent : MonoBehaviour
     {
         if(++_frameCounter % frameDelay == 0)
         {
-            _voiceDisplacementVector += new Vector2(Random.Range(-0.05f, 0.05f), Random.Range(0.2f, 0.4f));
+            _voiceDisplacementVector += new Vector2(Random.Range(-0.05f, 0.05f), Random.Range(0.02f, 0.04f));
         }
 
         _voiceDisplacementVector *= 0.9f;

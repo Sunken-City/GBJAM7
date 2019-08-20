@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14901961, g: 0.34117648, b: 0.28627452, a: 1}
+  m_Color: {r: 0.1254902, g: 0.12941177, b: 0.14117648, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95686275, g: 0, b: 0.85284555, a: 1}
+  m_Color: {r: 0.93725497, g: 0.21960786, b: 0.58431375, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -698,7 +698,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb4e9c3cb2f45e345ab1bb3425756dcb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 828720febd1323546bf4588b8836aea0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.928887, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.5921569, g: 0.36078432, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -969,7 +969,7 @@ PrefabInstance:
         type: 3}
       propertyPath: LookupTexture
       value: 
-      objectReference: {fileID: 2800000, guid: ee1813386cc38104a9c070f9154a6d73, type: 3}
+      objectReference: {fileID: 2800000, guid: f98464b7d29e43f44b2a6faa12387f2f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
 --- !u!4 &1151628737 stripped
@@ -988,6 +988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1231439481}
   - component: {fileID: 1231439482}
+  - component: {fileID: 1231439483}
   m_Layer: 8
   m_Name: Concerned Dude
   m_TagString: Untagged
@@ -1047,7 +1048,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9f6dbe996440ef34ba12a3e2360263a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e478e09eb2dda724abaa97cc5002b2e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1058,6 +1059,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1231439483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231439480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130b94b5480161c4f8e3d797b4992898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameDelay: 20
 --- !u!1 &1312271919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1228,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1870381934}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1241,6 +1255,7 @@ MonoBehaviour:
   selector: {fileID: 1029471604}
   victory: {fileID: 1505129607}
   loss: {fileID: 2128480573}
+  concernedDude: {fileID: 1231439480}
 --- !u!1 &1505129607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6128174744779138108, guid: 97900517fc7ed4d408daffe041611985,
@@ -1356,6 +1371,12 @@ Transform:
   m_Father: {fileID: 1590807427}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1870381934 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4143054132915845331, guid: 97790ebc72a17d641bf1c4012abb10a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1151628736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2002511257
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class QuestionAnswerController : MonoBehaviour
     public GameObject selector;
     public GameObject victory;
     public GameObject loss;
+    public GameObject concernedDude;
     private ScrollTextController _questionComponent;
     private Text _answerComponent;
     private string[] _advice;
@@ -32,7 +33,11 @@ public class QuestionAnswerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(MicrogameController.instance.HasLost() || MicrogameController.instance.HasWon())
+        if (_questionComponent.IsDone())
+        {
+            concernedDude.GetComponent<TalkWiggleComponent>().enabled = false;
+        }
+        if (MicrogameController.instance.HasLost() || MicrogameController.instance.HasWon())
         {
             return;
         }
@@ -55,6 +60,7 @@ public class QuestionAnswerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.J))
         {
             selector.SetActive(false);
+            concernedDude.GetComponent<TalkWiggleComponent>().enabled = true;
             _questionComponent.text = "That's a great idea!";
             _questionComponent.Reset();
             _answerComponent.text = _advice[_curAnswerIndex];
