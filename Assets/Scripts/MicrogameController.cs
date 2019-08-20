@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class MicrogameController : MonoBehaviour
 {
     public enum State
@@ -15,6 +16,7 @@ public class MicrogameController : MonoBehaviour
     }
     public static MicrogameController instance = null;
     public GameObject microgameSubScene = null;
+    public AudioClip backgroundMusic = null;
     public bool winOnTimeOut = false;
     private State _microgameState = State.NOT_STARTED;
     public float timeLimitSeconds = 5.0f;
@@ -26,6 +28,11 @@ public class MicrogameController : MonoBehaviour
         if(!instance)
         {
             instance = this;
+        }
+
+        if(backgroundMusic)
+        {
+            GetComponent<AudioSource>().PlayOneShot(backgroundMusic);
         }
     }
 
