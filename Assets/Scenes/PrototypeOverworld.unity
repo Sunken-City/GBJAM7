@@ -5289,6 +5289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSceneName: 
   lastMicrogameState: 0
+  victoryFanfare: {fileID: 1848537867231699383, guid: bdc25c6af51782c48baced34e138e6e4,
+    type: 3}
+  lossFanfare: {fileID: 0}
 --- !u!4 &1733927243
 Transform:
   m_ObjectHideFlags: 0

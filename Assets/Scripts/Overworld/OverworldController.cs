@@ -23,6 +23,10 @@ public class OverworldController : MonoBehaviour
 
     [HideInInspector]    
     public MicrogameController.State lastMicrogameState = MicrogameController.State.NOT_STARTED;
+
+    public GameObject victoryFanfare = null;
+    public GameObject lossFanfare = null;
+
     private State _state = State.PLAYING;
     private float _timeInState = 0.0f;
     private AsyncOperation _asyncMicrogameLoad = null;
@@ -86,10 +90,19 @@ public class OverworldController : MonoBehaviour
         if(lastMicrogameState == MicrogameController.State.WON)
         {
             Destroy(_currentActivatingEnemy);
+
+            if(victoryFanfare)
+            {
+                Instantiate(victoryFanfare);
+            }
         }
         else
         {
             _currentActivatingEnemy.GetComponent<EnemyScript>().Reset();
+            if(lossFanfare)
+            {
+                Instantiate(lossFanfare);
+            }
         }
         _currentActivatingEnemy = null;
     }
