@@ -18,7 +18,20 @@ public class ScrollTextController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _textComponent.text = text.Substring(0, _pos);
-        _pos++;
+        if (!IsDone())
+        {
+            _textComponent.text = text.Substring(0, _pos);
+            _pos++;
+        }
+    }
+
+    public void Reset()
+    {
+        _pos = 0;
+    }
+
+    public bool IsDone()
+    {
+        return _pos == text.Length + 1;
     }
 }
