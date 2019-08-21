@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129503847}
   - component: {fileID: 129503848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,6 +1065,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   winOnTimeOut: 0
   timeLimitSeconds: 5
+  microgameTimescale: 1
 --- !u!4 &2002511259
 Transform:
   m_ObjectHideFlags: 0

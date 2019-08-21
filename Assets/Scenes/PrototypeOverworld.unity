@@ -5672,6 +5672,7 @@ MonoBehaviour:
     type: 3}
   battleFanfare: {fileID: 3309926378979018965, guid: e0f1245196084fb42b27562af1ab8ecb,
     type: 3}
+  microgameTimescale: 1
 --- !u!4 &1733927243
 Transform:
   m_ObjectHideFlags: 0
