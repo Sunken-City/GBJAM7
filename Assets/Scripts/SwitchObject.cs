@@ -40,6 +40,7 @@ public class SwitchObject : MonoBehaviour
             if(background)
             {
                 background.GetComponent<SpriteRenderer>().color = Color.white;
+                background.GetComponent<SpriteRenderer>().sortingOrder = 0;
             }                
         }
     }
