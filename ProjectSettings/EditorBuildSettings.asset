@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mislead.unity
     guid: a7a9b86079664a443933a20d07826c84
+  - enabled: 1
+    path: Assets/Scenes/DiscoInferno.unity
+    guid: b900e4f0d1a12ff48897b24322a73222
   m_configObjects: {}

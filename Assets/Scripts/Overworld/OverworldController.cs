@@ -26,6 +26,7 @@ public class OverworldController : MonoBehaviour
 
     public GameObject victoryFanfare = null;
     public GameObject lossFanfare = null;
+    public GameObject battleFanfare = null;
 
     private State _state = State.PLAYING;
     private float _timeInState = 0.0f;
@@ -71,7 +72,11 @@ public class OverworldController : MonoBehaviour
     }
 
     public void BeginMicrogame(string microgameName, GameObject activatingEnemy)
-    {
+    {            
+        if(battleFanfare)
+        {
+            Instantiate(battleFanfare);
+        }
         ChangeToState(State.MICROGAME_TRANSITION);
         freezeInput = true;
         StartCoroutine(LoadMicrogameAsync(microgameName));
