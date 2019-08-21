@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4955980468382253224}
   - component: {fileID: 4660534848619226107}
+  - component: {fileID: 6339644144441675773}
   m_Layer: 0
   m_Name: VictoryFanfare
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6339644144441675773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848537867231699383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2533ef6846c51aa45822526ab7e1eb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetimeSeconds: 10

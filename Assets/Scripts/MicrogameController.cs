@@ -20,20 +20,24 @@ public class MicrogameController : MonoBehaviour
     public bool winOnTimeOut = false;
     private State _microgameState = State.NOT_STARTED;
     public float timeLimitSeconds = 5.0f;
+    public float microgameTimescale = 1.0f;
     private float _currentTimerSeconds = 0.0f;
     public GameObject timer;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if(!instance)
         {
             instance = this;
         }
 
+        microgameTimescale = OverworldController.instance ? OverworldController.instance.microgameTimescale : microgameTimescale;
+        Time.timeScale = microgameTimescale;
         if(backgroundMusic)
         {
             GetComponent<AudioSource>().PlayOneShot(backgroundMusic);
+            GetComponent<AudioSource>().pitch = microgameTimescale;
         }
 
         //Set the speed of the timer to match limit; use 0.29 to scale default animation speed
@@ -68,6 +72,7 @@ public class MicrogameController : MonoBehaviour
             OverworldController.instance.lastMicrogameState = State.WON;
         }
 
+        Time.timeScale = 1.0f;
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(OverworldController.instance.currentSceneName));
         OverworldController.instance.EndMicrogame();
         Destroy(microgameSubScene);

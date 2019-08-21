@@ -28,6 +28,8 @@ public class OverworldController : MonoBehaviour
     public GameObject lossFanfare = null;
     public GameObject battleFanfare = null;
 
+    public float microgameTimescale = 1.0f;
+
     private State _state = State.PLAYING;
     private float _timeInState = 0.0f;
     private AsyncOperation _asyncMicrogameLoad = null;

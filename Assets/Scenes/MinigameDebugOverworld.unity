@@ -249,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272291709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0.374, y: -0.961, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c04e0eb159944164f90a938a3cfce726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LookupTexture: {fileID: 2800000, guid: e36a4e687d61e6c4bb4e65b18f0ac44c, type: 3}
+  LookupTexture: {fileID: 2800000, guid: 84fa0e7c203c85845a553bcf0355579a, type: 3}
 --- !u!1 &578635235
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,12 +5441,12 @@ PrefabInstance:
     - target: {fileID: 5671642971703423208, guid: 86c56809a2047e645afa658f43b2e861,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.392
+      value: 0.271
       objectReference: {fileID: 0}
     - target: {fileID: 5671642971703423208, guid: 86c56809a2047e645afa658f43b2e861,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19
+      value: -0.979
       objectReference: {fileID: 0}
     - target: {fileID: 5671642971703423208, guid: 86c56809a2047e645afa658f43b2e861,
         type: 3}
@@ -5580,6 +5580,7 @@ MonoBehaviour:
   victoryFanfare: {fileID: 0}
   lossFanfare: {fileID: 0}
   battleFanfare: {fileID: 0}
+  microgameTimescale: 1
 --- !u!4 &1733927243
 Transform:
   m_ObjectHideFlags: 0
