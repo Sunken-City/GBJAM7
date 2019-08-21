@@ -6,6 +6,7 @@ public class InflateController : MonoBehaviour
 {
     public float growMultiplier = 1.1f;
     public float winMagnitude = 10.0f;
+    public bool freezeOnWin = false;
 
     public bool pressOnlyOnce = false;
 
@@ -31,6 +32,11 @@ public class InflateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (freezeOnWin && MicrogameController.instance.HasWon())
+        {
+            return;
+        }
+
         if (Input.GetKey(KeyCode.J) && (pressOnlyOnce ? _canContinueToInflate : true))
         {
             _currentScale *= growMultiplier;
