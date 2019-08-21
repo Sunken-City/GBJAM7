@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inflate : MonoBehaviour
+public class SmoochHandler : MonoBehaviour
 {
 
-    public GameObject Lips;
-    public GameObject Heart;
+    public GameObject lips;
+    public GameObject heart;
 
     private InflateController _inflateController;
     // Start is called before the first frame update
     void Start()
     {
-        this.Lips.SetActive(false);
+        lips.SetActive(false);
+        heart.SetActive(false);
         _inflateController = GetComponent<InflateController>();
     }
 
@@ -21,9 +22,9 @@ public class Inflate : MonoBehaviour
     {
         if (MicrogameController.instance.HasWon())
         {
-            this.Lips.SetActive(true);
-            transform.localScale = new Vector3(3.2f, 3.1f, 6.7f);
-            return;
+            heart.SetActive(true);
+            lips.SetActive(true);
+            
         }
     }
 }

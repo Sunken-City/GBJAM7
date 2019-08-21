@@ -225,11 +225,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133787799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0, z: 0}
+  m_LocalPosition: {x: -0.04, y: 0, z: 0}
   m_LocalScale: {x: 7.5087, y: 7.5087, z: 7.5087}
   m_Children: []
   m_Father: {fileID: 1651853424}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &133787801
 SpriteRenderer:
@@ -350,7 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: change me!
+  m_Text: smooch
 --- !u!222 &434759603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -523,7 +523,7 @@ PrefabInstance:
     - target: {fileID: 8530125112898813671, guid: 2fb6a92d0e1904148aba36ab2d134fd8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8530125112898813671, guid: 2fb6a92d0e1904148aba36ab2d134fd8,
         type: 3}
@@ -562,8 +562,8 @@ GameObject:
   m_Component:
   - component: {fileID: 866198497}
   - component: {fileID: 866198498}
-  - component: {fileID: 866198499}
   - component: {fileID: 866198500}
+  - component: {fileID: 866198499}
   m_Layer: 8
   m_Name: SweetPrince
   m_TagString: Untagged
@@ -646,11 +646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1892170e9e485e45bbe33940a9f1848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pumpMode: 0
-  growSpeed: 1.02
-  winMagnitude: 10
-  Lips: {fileID: 133787799}
-  Heart: {fileID: 1498382796}
+  lips: {fileID: 133787799}
+  heart: {fileID: 1498382796}
 --- !u!114 &866198500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growMultiplier: 1.02
-  winMagnitude: 10
+  winMagnitude: 15
+  freezeOnWin: 1
   pressOnlyOnce: 0
   _currentScale: 1
 --- !u!1 &962618611
@@ -740,7 +738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: change me!
+  m_Text: smooch
 --- !u!222 &962618614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -996,8 +994,8 @@ Transform:
   m_Children:
   - {fileID: 129503847}
   - {fileID: 866198497}
-  - {fileID: 133787800}
   - {fileID: 1498382797}
+  - {fileID: 133787800}
   m_Father: {fileID: 1590807427}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
