@@ -6,6 +6,7 @@ public class DirectionBounce : MonoBehaviour
 {
     public Vector2 bounceDirection;
     public Vector2 scaleDelta;
+    public float frequencySeconds = 1.0f;
 
     private Vector2 _homePosition;
     private Vector2 _homeScale;
@@ -20,7 +21,7 @@ public class DirectionBounce : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position =  Vector2.Lerp(_homePosition + bounceDirection, _homePosition - bounceDirection, Mathf.PingPong(Time.time, 1.0f));
-        transform.localScale =  Vector2.Lerp(_homeScale + scaleDelta, _homeScale - scaleDelta, Mathf.PingPong(Time.time, 1.0f));
+        transform.position =  Vector2.Lerp(_homePosition + bounceDirection, _homePosition - bounceDirection, Mathf.PingPong(Time.time, frequencySeconds));
+        transform.localScale =  Vector2.Lerp(_homeScale + scaleDelta, _homeScale - scaleDelta, Mathf.PingPong(Time.time, frequencySeconds));
     }
 }
