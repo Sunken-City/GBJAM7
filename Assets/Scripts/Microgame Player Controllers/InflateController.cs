@@ -27,6 +27,7 @@ public class InflateController : MonoBehaviour
     void Start()
     {
         _startingScale = transform.localScale;
+        growMultiplier += MicrogameController.instance.microgameTimescale - 1.0f;
     }
 
     // Update is called once per frame

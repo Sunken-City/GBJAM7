@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2253811490613327377}
   - component: {fileID: 1958366166129218882}
+  - component: {fileID: 8196490973359421153}
   m_Layer: 0
   m_Name: LossFanfare
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8196490973359421153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4766878799460931342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2533ef6846c51aa45822526ab7e1eb24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetimeSeconds: 10

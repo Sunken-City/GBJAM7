@@ -6,10 +6,12 @@ public class PointerController : MonoBehaviour
 {
     public bool freezeOnVictory = false;
     public bool freezeOnLoss = false;
+
+    private float _speed;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _speed = 0.01f * MicrogameController.instance.microgameTimescale;
     }
 
     // Update is called once per frame
@@ -27,19 +29,19 @@ public class PointerController : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-0.01f, 0, 0);
+            transform.position += new Vector3(-_speed, 0, 0);
         }
         if(Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(0.01f, 0, 0);
+            transform.position += new Vector3(_speed, 0, 0);
         }
         if(Input.GetKey(KeyCode.W))
         {
-            transform.position += new Vector3(0, 0.01f, 0);
+            transform.position += new Vector3(0, _speed, 0);
         }
         if(Input.GetKey(KeyCode.S))
         {
-            transform.position += new Vector3(0, -0.01f, 0);
+            transform.position += new Vector3(0, -_speed, 0);
         }
     }
 }
