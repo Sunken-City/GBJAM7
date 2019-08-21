@@ -22,6 +22,7 @@ public class MicrogameController : MonoBehaviour
     public float timeLimitSeconds = 5.0f;
     public float microgameTimescale = 1.0f;
     private float _currentTimerSeconds = 0.0f;
+    public GameObject timer;
 
     // Start is called before the first frame update
     void Awake()
@@ -38,6 +39,9 @@ public class MicrogameController : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(backgroundMusic);
             GetComponent<AudioSource>().pitch = microgameTimescale;
         }
+
+        //Set the speed of the timer to match limit; use 0.29 to scale default animation speed
+        timer.GetComponent<Animator>().speed = 1 / (timeLimitSeconds * 0.29f);
     }
 
     void OnDestroy()
