@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 129503847}
   - component: {fileID: 129503848}
   - component: {fileID: 129503849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1651853424}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &129503848
 SpriteRenderer:
@@ -209,7 +209,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129503846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4353f2c7a7b0d2947aaed7cc033213ed, type: 2}
   m_CullingMode: 0
@@ -834,8 +834,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1940934737}
   - {fileID: 129503847}
+  - {fileID: 1940934737}
   - {fileID: 2073053863}
   - {fileID: 1550441655}
   m_Father: {fileID: 1590807427}
@@ -904,7 +904,7 @@ Transform:
   m_LocalScale: {x: 0.2886, y: 0.2886, z: 1.1544}
   m_Children: []
   m_Father: {fileID: 1651853424}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1940934738
 SpriteRenderer:
@@ -989,6 +989,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 0}
   winOnTimeOut: 0
   timeLimitSeconds: 10
+  microgameTimescale: 1
   timer: {fileID: 2097791595}
 --- !u!4 &2002511259
 Transform:
@@ -1413,6 +1414,16 @@ PrefabInstance:
     - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201903, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201903, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
