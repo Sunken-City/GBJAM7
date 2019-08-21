@@ -32,7 +32,9 @@ public class OverworldController : MonoBehaviour
     private float _timeInState = 0.0f;
     private AsyncOperation _asyncMicrogameLoad = null;
     private string _currentMicrogameName = null;
+    private List<string> _microgameNameQueue = new List<string>();
     private GameObject _currentActivatingEnemy = null;
+    private List<GameObject> _activatingEnemyQueue = new List<GameObject>();
     private GameObject _playerReference = null;
     private GameObject _cameraReference = null;
 
@@ -72,23 +74,32 @@ public class OverworldController : MonoBehaviour
     }
 
     public void BeginMicrogame(string microgameName, GameObject activatingEnemy)
-    {            
-        if(battleFanfare)
+    {
+        if(_currentMicrogameName != null)
         {
-            Instantiate(battleFanfare);
+            _microgameNameQueue.Add(microgameName);
+            _activatingEnemyQueue.Add(activatingEnemy);
         }
-        ChangeToState(State.MICROGAME_TRANSITION);
-        freezeInput = true;
-        StartCoroutine(LoadMicrogameAsync(microgameName));
-        StartCoroutine(ExecuteMicrogameScene(microgameName));
-        _currentMicrogameName = microgameName;
-        _currentActivatingEnemy = activatingEnemy;
+        else
+        {
+            if (battleFanfare)
+            {
+                Instantiate(battleFanfare);
+            }
+            ChangeToState(State.MICROGAME_TRANSITION);
+            freezeInput = true;
+            StartCoroutine(LoadMicrogameAsync(microgameName));
+            StartCoroutine(ExecuteMicrogameScene(microgameName));
+            _currentMicrogameName = microgameName;
+            _currentActivatingEnemy = activatingEnemy;
+        }
     }
 
     public void EndMicrogame()
     {
         ChangeToState(State.PLAYING_TRANSITION);
         StartCoroutine(UnloadMicrogameAsync(_currentMicrogameName));
+        freezeInput = false;
         _currentMicrogameName = null;
         _asyncMicrogameLoad = null;
 
@@ -110,6 +121,14 @@ public class OverworldController : MonoBehaviour
             }
         }
         _currentActivatingEnemy = null;
+        if(_activatingEnemyQueue.ToArray().Length != 0)
+        {
+            GameObject enemy = _activatingEnemyQueue[0];
+            string microgame = _microgameNameQueue[0];
+            _activatingEnemyQueue.RemoveAt(0);
+            _microgameNameQueue.RemoveAt(0);
+            BeginMicrogame(microgame, enemy);
+        }
     }
         
     IEnumerator ExecuteMicrogameScene(string microgameSceneName)
@@ -152,6 +171,5 @@ public class OverworldController : MonoBehaviour
         yield return new WaitForSeconds(timeToWait);
         
         ChangeToState(State.PLAYING);
-        freezeInput = false;
     }
 }
