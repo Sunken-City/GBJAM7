@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6c785e19dbb4e4f8e4a7efc6824457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growMultiplier: 1.02
+  growMultiplier: 1.03
   winMagnitude: 15
   freezeOnWin: 1
   pressOnlyOnce: 0
