@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tapping : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
-    private bool _allTapped = false;
-
     // Start is called before the first frame update
     void Start()
     {
