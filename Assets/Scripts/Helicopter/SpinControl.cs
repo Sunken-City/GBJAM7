@@ -24,12 +24,12 @@ public class SpinControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            _rotVelocity += 1;
+            _rotVelocity += 0.5f;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            _rotVelocity -= 1;
+            _rotVelocity -= 0.5f;
         }
 
         transform.Rotate(Vector3.forward * _rotVelocity);

@@ -792,6 +792,7 @@ GameObject:
   - component: {fileID: 1811139633}
   - component: {fileID: 1811139636}
   - component: {fileID: 1811139635}
+  - component: {fileID: 1811139637}
   m_Layer: 0
   m_Name: Helicopter_0
   m_TagString: Untagged
@@ -894,7 +895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4bf1dffd0aa48489922b2b939bb85b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landHeight: -0.4
+  landHeight: -0.35
 --- !u!114 &1811139636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,6 +910,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingRotVelocity: 10
   freezeOnWin: 1
+--- !u!114 &1811139637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811139631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1379300757a6aa4ebb0d3e1a7dd1083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToSpawn:
+  - {fileID: 4210182043074327365, guid: cb75c1d0a8988564980f112f606f934e, type: 3}
 --- !u!1 &1816237932
 GameObject:
   m_ObjectHideFlags: 0

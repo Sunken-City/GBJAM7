@@ -28,12 +28,10 @@ public class Land : MonoBehaviour
             if (angle < 45)
             {
                 MicrogameController.instance.WinMicrogame();
-                print("you win!");
             }
             else
             {
                 MicrogameController.instance.LoseMicrogame();
-                print("you Lose!");
             }
 
         }
