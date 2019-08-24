@@ -32,7 +32,7 @@ public class EnemyScript : MonoBehaviour
             return;
         }
 
-        if ((!OverworldController.instance.freezeInput &&
+        if ((!_hasBeenTriggered &&
         Vector2.Distance(_playerReference.transform.position, transform.position) < playerDetectionRadius) &&
         ((Input.GetKey(KeyCode.W) ||
         Input.GetKey(KeyCode.A) ||
