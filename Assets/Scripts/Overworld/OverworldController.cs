@@ -30,6 +30,7 @@ public class OverworldController : MonoBehaviour
     public GameObject victoryFanfare = null;
     public GameObject lossFanfare = null;
     public GameObject battleFanfare = null;
+    //public AudioClip backgroundMusic = null;
 
     public float microgameTimescale = 1.0f;
 
@@ -43,6 +44,7 @@ public class OverworldController : MonoBehaviour
     private GameObject _playerReference = null;
     private GameObject _cameraReference = null;
     private GameObject _currentPlayingSound = null;
+    private AudioSource _bgmSource = null;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +59,8 @@ public class OverworldController : MonoBehaviour
         Debug.Assert(_playerReference, "The player should be tagged as 'Player'");
         _cameraReference = GameObject.FindGameObjectWithTag("MainCamera");
         Debug.Assert(_playerReference, "Need a Main Camera to reference in Overworld Controller");
+        _bgmSource = GetComponent<AudioSource>();
+        _bgmSource.Play();
     }
 
     // Update is called once per frame
@@ -81,6 +85,7 @@ public class OverworldController : MonoBehaviour
 
     public void BeginMicrogame(string microgameName, GameObject activatingEnemy)
     {
+        _bgmSource.Pause();
         if (_currentPlayingSound)
         {
             Destroy(_currentPlayingSound);
@@ -133,6 +138,7 @@ public class OverworldController : MonoBehaviour
             }
         }
         _currentActivatingEnemy = null;
+        _bgmSource.UnPause();
         if(_activatingEnemyQueue.ToArray().Length != 0)
         {
             GameObject enemy = _activatingEnemyQueue[0];
