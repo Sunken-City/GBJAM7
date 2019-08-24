@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,7 +31,6 @@ public class OverworldController : MonoBehaviour
     public GameObject victoryFanfare = null;
     public GameObject lossFanfare = null;
     public GameObject battleFanfare = null;
-    //public AudioClip backgroundMusic = null;
 
     public float microgameTimescale = 1.0f;
 
@@ -138,7 +138,7 @@ public class OverworldController : MonoBehaviour
             }
         }
         _currentActivatingEnemy = null;
-        _bgmSource.UnPause();
+        waitForFanfare();
         if(_activatingEnemyQueue.ToArray().Length != 0)
         {
             GameObject enemy = _activatingEnemyQueue[0];
@@ -147,6 +147,18 @@ public class OverworldController : MonoBehaviour
             _microgameNameQueue.RemoveAt(0);
             BeginMicrogame(microgame, enemy);
         }
+    }
+
+    public async void waitForFanfare()
+    {
+        bool isPlaying = true;
+        while(isPlaying)
+        {
+            isPlaying = _currentPlayingSound.GetComponent<AudioSource>().isPlaying;
+            await Task.Delay(250);
+        }
+
+        _bgmSource.UnPause();
     }
         
     IEnumerator ExecuteMicrogameScene(string microgameSceneName)
