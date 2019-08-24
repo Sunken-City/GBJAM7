@@ -25,7 +25,7 @@ public class Land : MonoBehaviour
             Vector3 axis;
             transform.rotation.ToAngleAxis(out angle, out axis);
 
-            if (angle < 45)
+            if (angle < 45 || angle > 315)
             {
                 MicrogameController.instance.WinMicrogame();
             }
