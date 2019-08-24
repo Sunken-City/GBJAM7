@@ -42,6 +42,7 @@ public class OverworldController : MonoBehaviour
     private List<GameObject> _activatingEnemyQueue = new List<GameObject>();
     private GameObject _playerReference = null;
     private GameObject _cameraReference = null;
+    private GameObject _currentPlayingSound = null;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +81,11 @@ public class OverworldController : MonoBehaviour
 
     public void BeginMicrogame(string microgameName, GameObject activatingEnemy)
     {
-        if(_currentMicrogameName != null)
+        if (_currentPlayingSound)
+        {
+            Destroy(_currentPlayingSound);
+        }
+        if (_currentMicrogameName != null)
         {
             _microgameNameQueue.Add(microgameName);
             _activatingEnemyQueue.Add(activatingEnemy);
@@ -116,7 +121,7 @@ public class OverworldController : MonoBehaviour
 
             if(victoryFanfare)
             {
-                Instantiate(victoryFanfare);
+                _currentPlayingSound = Instantiate(victoryFanfare);
             }
         }
         else
@@ -124,7 +129,7 @@ public class OverworldController : MonoBehaviour
             _currentActivatingEnemy.GetComponent<EnemyScript>().Reset();
             if(lossFanfare)
             {
-                Instantiate(lossFanfare);
+                _currentPlayingSound = Instantiate(lossFanfare);
             }
         }
         _currentActivatingEnemy = null;
