@@ -108,6 +108,11 @@ public class MicrogameController : MonoBehaviour
         return _microgameState == State.LOST;
     }
 
+    public bool HasFinished()
+    {
+        return _microgameState == State.LOST || _microgameState == State.WON;
+    }
+
     public bool HasNotYetWon()
     {
         return (_microgameState == State.PLAYING || _microgameState == State.NOT_STARTED);
