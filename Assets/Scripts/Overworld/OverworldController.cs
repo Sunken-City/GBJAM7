@@ -155,7 +155,7 @@ public class OverworldController : MonoBehaviour
         while(isPlaying)
         {
             isPlaying = _currentPlayingSound.GetComponent<AudioSource>().isPlaying;
-            await Task.Delay(250);
+            await Task.Delay(100);
         }
 
         _bgmSource.UnPause();
