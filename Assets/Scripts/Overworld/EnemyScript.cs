@@ -32,12 +32,12 @@ public class EnemyScript : MonoBehaviour
             return;
         }
 
-        if((!OverworldController.instance.freezeInput && 
+        if ((!OverworldController.instance.freezeInput &&
         Vector2.Distance(_playerReference.transform.position, transform.position) < playerDetectionRadius) &&
-        (Input.GetKey(KeyCode.W) ||
+        ((Input.GetKey(KeyCode.W) ||
         Input.GetKey(KeyCode.A) ||
         Input.GetKey(KeyCode.S) ||
-        Input.GetKey(KeyCode.D)))
+        Input.GetKey(KeyCode.D)) || OverworldController.instance.allowGangUp))
         {
             Vector2 displacement = (_playerReference.transform.position - transform.position);
             displacement.Normalize();

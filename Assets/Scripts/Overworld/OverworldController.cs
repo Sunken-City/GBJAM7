@@ -19,6 +19,9 @@ public class OverworldController : MonoBehaviour
     public bool freezeInput {get; set;}
 
     [HideInInspector]
+    public bool allowGangUp { get; set; }
+
+    [HideInInspector]
     public string currentSceneName = "";
 
     [HideInInspector]    
@@ -84,6 +87,7 @@ public class OverworldController : MonoBehaviour
         }
         else
         {
+            allowGangUp = true;
             if (battleFanfare)
             {
                 Instantiate(battleFanfare);
@@ -101,6 +105,7 @@ public class OverworldController : MonoBehaviour
     {
         ChangeToState(State.PLAYING_TRANSITION);
         StartCoroutine(UnloadMicrogameAsync(_currentMicrogameName));
+        allowGangUp = false;
         freezeInput = false;
         _currentMicrogameName = null;
         _asyncMicrogameLoad = null;
