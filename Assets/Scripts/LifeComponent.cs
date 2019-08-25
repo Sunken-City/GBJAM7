@@ -6,6 +6,7 @@ public class LifeComponent : MonoBehaviour
 {
     public int maxLife = 3;
     public GameObject player;
+    public GameObject[] heartObjects;
     private int _curLife = 3;
     private bool _lifeLost = false;
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class LifeComponent : MonoBehaviour
     public void LoseLife()
     {
         Debug.Log("lost a life");
+        heartObjects[_curLife - 1].GetComponent<Animator>().SetBool("isFull", false);
         --_curLife;
         _lifeLost = true;
         if(_curLife == 0)
