@@ -1079,7 +1079,6 @@ GameObject:
   - component: {fileID: 1346078302}
   - component: {fileID: 1346078301}
   - component: {fileID: 1346078300}
-  - component: {fileID: 1346078304}
   - component: {fileID: 1346078305}
   m_Layer: 5
   m_Name: Canvas
@@ -1168,18 +1167,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1346078304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346078299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604a90b3f5cd20e4f98ef2d8d4a848b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1346078305
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1414,3 +1401,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditsFile: {fileID: 4900000, guid: 0adad4e35a195834b8c8e2a8bf37d012, type: 3}
+  camera: {fileID: 1078459014}
