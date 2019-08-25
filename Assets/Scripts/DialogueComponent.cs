@@ -49,9 +49,10 @@ public class DialogueComponent : MonoBehaviour
             }
             else
             {
-                if(activateableObject)
+                ActivateableComponent activateableComponent = activateableObject.GetComponent<ActivateableComponent>();
+                if (activateableObject && activateableComponent)
                 {
-                    activateableObject.SetActive(true);
+                    activateableComponent.SetActive(true);
                 }
                 Destroy(_dialogueBoxInstance);
                 _dialogueBoxInstance = null;
