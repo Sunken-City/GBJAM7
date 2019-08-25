@@ -127,8 +127,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,7 +136,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef8a9f1f0df384c4e831b59a5b112c94
+      spriteID: a227c4687fd00604088423da92d4d67d
       internalID: -5371913129431526993
       vertices: []
       indices: 
@@ -146,10 +146,10 @@ TextureImporter:
       name: Hazel Left_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,7 +157,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eefa2ff24b694ab4d812713cb61f874b
+      spriteID: 22f77ec159ebacc43bc07655ac6c0fbe
       internalID: -3430713680383631295
       vertices: []
       indices: 
@@ -167,10 +167,10 @@ TextureImporter:
       name: Hazel Left_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 36
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1667369c8e59a3c4a81acb08169fd145
+      spriteID: 3c0c70fc1ac86ce40aec42f009ee8af4
       internalID: -9137233927632330778
       vertices: []
       indices: 
@@ -188,10 +188,10 @@ TextureImporter:
       name: Hazel Left_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 54
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 573b8fc41c099fd468810233aa1be99a
+      spriteID: c3659d9a5b88d9743bd68fa32701672b
       internalID: -865710288107318289
       vertices: []
       indices: 
@@ -209,10 +209,10 @@ TextureImporter:
       name: Hazel Left_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 72
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,7 +220,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d5b2c84eda1e96459ca0b06501f7536
+      spriteID: a2d3fd9b00d0bf64fb2f21a0e91d1775
       internalID: -5673698772217547670
       vertices: []
       indices: 
@@ -230,10 +230,10 @@ TextureImporter:
       name: Hazel Left_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 90
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,7 +241,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 080020c380558884d859a89d1ae00caf
+      spriteID: bd7a459a0c882ab4b82a47b0ff34af24
       internalID: 6724910210927223808
       vertices: []
       indices: 
@@ -251,10 +251,10 @@ TextureImporter:
       name: Hazel Left_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 108
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,7 +262,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b6a15c9f51b704d878684b37e4d944
+      spriteID: 1ddbf83f0f818fe48a412bd22d86cd23
       internalID: -243094316932586680
       vertices: []
       indices: 
@@ -272,10 +272,10 @@ TextureImporter:
       name: Hazel Left_7
       rect:
         serializedVersion: 2
-        x: 112
+        x: 126
         y: 0
-        width: 16
-        height: 16
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,7 +283,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfbda28a6d5c4d8429e23d192de6cc17
+      spriteID: a6f8a227414afc64089d3a3106fec34e
       internalID: -2831670872040782469
       vertices: []
       indices: 
