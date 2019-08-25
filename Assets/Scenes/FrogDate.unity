@@ -814,6 +814,11 @@ PrefabInstance:
       propertyPath: LookupTexture
       value: 
       objectReference: {fileID: 2800000, guid: 7f0beff7e9566684b9b7685d9212a909, type: 3}
+    - target: {fileID: 4143054132915845329, guid: 97790ebc72a17d641bf1c4012abb10a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
 --- !u!4 &1151628737 stripped
@@ -1225,7 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 106ea10d7e62ed045b6043c4d0153372, type: 3}
   winOnTimeOut: 0
   timeLimitSeconds: 5
   microgameTimescale: 1

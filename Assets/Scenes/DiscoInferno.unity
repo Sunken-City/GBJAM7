@@ -582,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 4143054132915845329, guid: 97790ebc72a17d641bf1c4012abb10a8,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
@@ -986,7 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: ec0d417846ec97e40aca3c20b331a989, type: 3}
   winOnTimeOut: 0
   timeLimitSeconds: 5
   microgameTimescale: 1
