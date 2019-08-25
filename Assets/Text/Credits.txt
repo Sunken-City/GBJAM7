@@ -7,6 +7,12 @@ Anthony "Sunken City" Cloudy
 Producer:
 Jeremy Arata
 
+Programmers:
+Anthony "Sunken City" Cloudy
+Jonathan "Q-Pert" Lyttle
+Isabel Ovalles
+Ryan Sligh
+
 Level Design:
 George Boden
 
@@ -20,7 +26,7 @@ Loic Ferdinandi
 Audio:
 Chris Underwood
 
-Writing:
+Writer:
 George Boden
 
 Microgame Developers:
@@ -44,6 +50,9 @@ Smooch
     ~ Ryan Sligh
 Wacky Tappy
     ~ Isabel Ovalles
+
+Morale Lead:
+Peter Browne
 
 Idea Guy:
 Tommaso "Forbes 30 Under 30" Checchi

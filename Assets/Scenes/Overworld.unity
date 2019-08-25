@@ -7254,7 +7254,7 @@ PrefabInstance:
         type: 3}
       propertyPath: newBackgroundMusic
       value: 
-      objectReference: {fileID: 8300000, guid: 18a6fa24416dc114c82e1818aee3b105, type: 3}
+      objectReference: {fileID: 8300000, guid: aed1aae03527c9f4db278bd91a08c7b6, type: 3}
     - target: {fileID: 5353833497414952953, guid: 96b9958cd34aaed4381d853fa9347dbd,
         type: 3}
       propertyPath: x
@@ -7908,5 +7908,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8992818791729833847, guid: 94041449158bf02468dfb9ca4bb7c087,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a6fa24416dc114c82e1818aee3b105, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94041449158bf02468dfb9ca4bb7c087, type: 3}
