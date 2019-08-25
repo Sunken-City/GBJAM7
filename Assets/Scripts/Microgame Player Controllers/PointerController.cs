@@ -7,6 +7,7 @@ public class PointerController : MonoBehaviour
     public bool freezeOnVictory = false;
     public bool freezeOnLoss = false;
     public float speedModifier = 1.0f;
+
     private float _speed;
     // Start is called before the first frame update
     void Start()
