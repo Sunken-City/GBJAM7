@@ -89,6 +89,8 @@ public class OverworldController : MonoBehaviour
         if (_currentPlayingSound)
         {
             Destroy(_currentPlayingSound);
+            _currentPlayingSound = null;
+            Debug.Log("Tried to destroy current playing sound");
         }
         if (_currentMicrogameName != null)
         {
@@ -154,7 +156,7 @@ public class OverworldController : MonoBehaviour
         bool isPlaying = true;
         while(isPlaying)
         {
-            isPlaying = _currentPlayingSound.GetComponent<AudioSource>().isPlaying;
+            isPlaying = _currentPlayingSound ? _currentPlayingSound.GetComponent<AudioSource>().isPlaying : true;
             await Task.Delay(100);
         }
 
