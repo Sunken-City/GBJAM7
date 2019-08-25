@@ -26,7 +26,7 @@ Loic Ferdinandi
 Audio:
 Chris Underwood
 
-Writing:
+Writer:
 George Boden
 
 Microgame Developers:
@@ -50,6 +50,9 @@ Smooch
     ~ Ryan Sligh
 Wacky Tappy
     ~ Isabel Ovalles
+
+Morale Lead:
+Peter Browne
 
 Idea Guy:
 Tommaso "Forbes 30 Under 30" Checchi
