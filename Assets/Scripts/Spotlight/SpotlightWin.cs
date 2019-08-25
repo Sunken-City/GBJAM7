@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpotlightWin : MonoBehaviour
 {
     public GameObject target;
+    public AudioClip findSound;
 
     private SpriteRenderer _targetSprite;
     private SpriteMask _spriteMask;
@@ -32,6 +33,13 @@ public class SpotlightWin : MonoBehaviour
         Vector3 dispVector = transform.position - target.transform.position;
         if (dispVector.magnitude + _targetSprite.bounds.size.x -0.1  < _spriteMask.sprite.bounds.size.x)
         {
+            if(!MicrogameController.instance.HasWon())
+            {
+                AudioSource audioSouce = MicrogameController.instance.GetComponent<AudioSource>();
+                audioSouce.clip = findSound;
+                audioSouce.Play();
+            }
+
             MicrogameController.instance.WinMicrogame();
         }
     }

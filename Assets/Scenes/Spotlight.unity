@@ -295,9 +295,9 @@ SpriteMask:
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
-  m_BackSortingLayerID: 1186347573
+  m_BackSortingLayerID: -432248909
   m_FrontSortingLayer: 0
-  m_BackSortingLayer: -2
+  m_BackSortingLayer: -4
   m_FrontSortingOrder: 0
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freezeOnVictory: 1
   freezeOnLoss: 0
-  speedModifier: 1.7
+  speedModifier: 2
 --- !u!114 &96883600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 724781}
+  findSound: {fileID: 8300000, guid: 0521a9ce5c0cae64f8e1a9a858c0a90a, type: 3}
 --- !u!1 &129503846
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,8 +929,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1123189647
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 63a150b7e27517144a31f68519e1cf5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1343,12 +1344,12 @@ PrefabInstance:
     - target: {fileID: 5830674588469201903, guid: 1b79dbcafa1d9ad4fbe48243006483da,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: 0
+      value: 1186347573
       objectReference: {fileID: 0}
     - target: {fileID: 5830674588469201903, guid: 1b79dbcafa1d9ad4fbe48243006483da,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b79dbcafa1d9ad4fbe48243006483da, type: 3}
