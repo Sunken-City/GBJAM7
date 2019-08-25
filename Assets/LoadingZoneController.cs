@@ -30,5 +30,6 @@ public class LoadingZoneController : MonoBehaviour
         OverworldController.instance.microgameTimescale = newMicrogameTimescale;
         OverworldController.instance.SetBGMPitch(newMicrogameTimescale);
         player.transform.position = new Vector2(x, y);
+        OverworldPlayerController.playerRespawnLocation = player.transform.position;
     }
 }
