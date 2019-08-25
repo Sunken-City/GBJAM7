@@ -639,6 +639,11 @@ PrefabInstance:
       propertyPath: LookupTexture
       value: 
       objectReference: {fileID: 2800000, guid: c46d8e9adce9e7145a836b6c878da992, type: 3}
+    - target: {fileID: 4143054132915845329, guid: 97790ebc72a17d641bf1c4012abb10a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
 --- !u!4 &1151628737 stripped
@@ -925,6 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToSpawn:
   - {fileID: 4210182043074327365, guid: cb75c1d0a8988564980f112f606f934e, type: 3}
+  - {fileID: 316544172980277399, guid: ea8a91edddcd9014bb72341dc97388ca, type: 3}
 --- !u!1 &1816237932
 GameObject:
   m_ObjectHideFlags: 0
