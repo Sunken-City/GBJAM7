@@ -143,12 +143,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5671642971703423208}
   - component: {fileID: 5671642971703423209}
-  - component: {fileID: 5671642971703423211}
   - component: {fileID: 5671642971703423189}
   - component: {fileID: 5671642971703423210}
   - component: {fileID: 5671642971703423188}
+  - component: {fileID: 1696632701}
   m_Layer: 0
-  m_Name: testPlayer
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,18 +219,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5671642971703423211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671642971703423214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ffc43bd550bbae4a88c09d017be3a1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &5671642971703423189
 Rigidbody2D:
   serializedVersion: 4
@@ -287,3 +275,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1696632701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5671642971703423214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd689c258388be14d856376133488e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
