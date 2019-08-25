@@ -5,6 +5,7 @@ using UnityEngine;
 public class Land : MonoBehaviour
 {
     public float landHeight = -0.3f;
+    public bool shouldLand = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,25 @@ public class Land : MonoBehaviour
 
             if (angle < 45 || angle > 315)
             {
-                MicrogameController.instance.WinMicrogame();
+                if(shouldLand)
+                {
+                    MicrogameController.instance.WinMicrogame();
+                }
+                else
+                {
+                    MicrogameController.instance.LoseMicrogame();
+                }
             }
             else
             {
-                MicrogameController.instance.LoseMicrogame();
+                if(shouldLand)
+                {
+                    MicrogameController.instance.LoseMicrogame();
+                }
+                else
+                {
+                    MicrogameController.instance.WinMicrogame();
+                }
             }
 
         }
