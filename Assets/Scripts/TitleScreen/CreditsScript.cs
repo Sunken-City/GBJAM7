@@ -31,10 +31,9 @@ public class CreditsScript : MonoBehaviour
             transform.position += new Vector3(0, 0.005f, 0);
         }
         _relativePosition = camera.transform.InverseTransformDirection(transform.position - camera.transform.position);
-        if(_relativePosition.y > (_textComponent.preferredHeight / 100))
+        if(Input.GetKey(KeyCode.K) || _relativePosition.y > (_textComponent.preferredHeight / 100))
         {
             SceneManager.LoadScene("TitleScreen");
-            //Destroy(gameObject);
         }
     }
 }
