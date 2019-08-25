@@ -21,6 +21,7 @@ public class Squished : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        Debug.Log("slime got squished");
         ++numOfSquishedSlimes;
     }
 }

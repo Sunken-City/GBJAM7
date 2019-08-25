@@ -15,9 +15,6 @@ public class SlimeSquishedGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (numOfSquishedSlimes == 5)
-        {
-            MicrogameController.WinMicrogame(); //make the microgame be in WIN state??? 
-        }
+        
     }
 }
