@@ -20,6 +20,9 @@ Loic Ferdinandi
 Audio:
 Chris Underwood
 
+Writing:
+George Boden
+
 Microgame Developers:
 Credit Confidence
     ~ Anthony "Sunken City" Cloudy
