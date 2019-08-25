@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 82cf48ebb0c0d9d44aad6baaff3c7e29
+  - enabled: 1
+    path: Assets/Scenes/WackyTappy.unity
+    guid: d5f545f2b8eb7aa4e89a573c84a3bd89
   m_configObjects: {}
