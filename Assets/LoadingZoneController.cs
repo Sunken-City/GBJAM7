@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class LoadingZoneController : MonoBehaviour
 {
-    public int x;
-    public int y;
+    public float x;
+    public float y;
     public GameObject player;
     public AudioClip newBackgroundMusic;
     public float newMicrogameTimescale = 1.0f;
