@@ -24,12 +24,12 @@ public class SpinControl : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            _rotVelocity += 0.5f;
+            _rotVelocity += 0.5f * MicrogameController.instance.microgameTimescale;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            _rotVelocity -= 0.5f;
+            _rotVelocity -= 0.5f * MicrogameController.instance.microgameTimescale;
         }
 
         transform.Rotate(Vector3.forward * _rotVelocity);

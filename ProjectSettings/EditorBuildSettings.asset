@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WackyTappy.unity
     guid: d5f545f2b8eb7aa4e89a573c84a3bd89
+  - enabled: 1
+    path: Assets/Scenes/Spotlight.unity
+    guid: 36f680ed17288354c81f229b413472c5
   m_configObjects: {}

@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 724782}
   - component: {fileID: 724784}
   - component: {fileID: 724783}
-  - component: {fileID: 724785}
   m_Layer: 0
   m_Name: SuspectAnim
   m_TagString: Untagged
@@ -147,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.257, y: 0.616, z: 0}
+  m_LocalPosition: {x: 0.693, y: 0.561, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1651853424}
@@ -222,19 +221,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &724785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 724781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a51d171009a8c64c8016133dd03df70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!1 &96883596
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freezeOnVictory: 1
   freezeOnLoss: 0
-  speedModifier: 2
+  speedModifier: 1.7
 --- !u!114 &96883600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,6 +849,11 @@ PrefabInstance:
       propertyPath: LookupTexture
       value: 
       objectReference: {fileID: 2800000, guid: 6cec83c8540f1474cb07b71f1063650b, type: 3}
+    - target: {fileID: 4143054132915845329, guid: 97790ebc72a17d641bf1c4012abb10a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
 --- !u!4 &1151628737 stripped
@@ -1404,7 +1395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: e1dfb85712686f2408981907b8fc4af7, type: 3}
   winOnTimeOut: 0
   timeLimitSeconds: 5
   microgameTimescale: 1
