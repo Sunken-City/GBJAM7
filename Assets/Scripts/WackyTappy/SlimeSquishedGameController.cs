@@ -17,11 +17,10 @@ public class SlimeSquishedGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("update is being called in slimesquishedgamecontroller");
 
-       // if (numOfSquishedSlimes == 5)
-       // {
-           // WinMicrogame();
-       // }
+        if (numOfSquishedSlimes == 2)
+        {
+        MicrogameController.instance.WinMicrogame();
+    }
     }
 }
