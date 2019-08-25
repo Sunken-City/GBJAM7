@@ -5,7 +5,7 @@ using static SlimeSquishedGameController;
 
 public class Squished : MonoBehaviour
 {
-    private bool isSquished; 
+    private bool _hasBeenSquished = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,14 @@ public class Squished : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        transform.localScale = new Vector3(transform.localScale.x, 0.3f, transform.localScale.z);
-        ++numOfSquishedSlimes;
+       if (_hasBeenSquished) {
+            return;
+        }
+       else
+        {
+            transform.localScale = new Vector3(transform.localScale.x, 0.3f, transform.localScale.z);
+            ++numOfSquishedSlimes;
+        }
+       
     }
 }
