@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129503847}
   - component: {fileID: 129503848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bgBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ SpriteRenderer:
   m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4e935777e0f50a24ea5470ed2cfddff1, type: 3}
-  m_Color: {r: 0.050980397, g: 0.08627451, b: 0.03137255, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -260,7 +260,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.06
 --- !u!212 &256202824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 2}
+  m_AnchoredPosition: {x: -1, y: 1}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &434759602
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7843138, g: 0.9568628, b: 0.9176471, a: 1}
+  m_Color: {r: 0.25882354, g: 0.8470589, b: 0.7490196, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444740013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6, y: -0.4, z: 0}
+  m_LocalPosition: {x: -0.6, y: 0.402, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1651853424}
@@ -437,7 +437,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.06
 --- !u!212 &444740017
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -625,7 +625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617644963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.64, z: 0}
+  m_LocalPosition: {x: -0.06, y: 0.236, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1651853424}
@@ -658,7 +658,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.06
 --- !u!212 &617644967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.001, y: -0.02}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.06
 --- !u!114 &650378657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,7 +878,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.06
 --- !u!212 &732394855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.050980397, g: 0.08627451, b: 0.03137255, a: 1}
+  m_Color: {r: 0.13725491, g: 0.34117648, b: 0.3921569, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1108,7 +1108,12 @@ PrefabInstance:
         type: 3}
       propertyPath: LookupTexture
       value: 
-      objectReference: {fileID: 2800000, guid: d207a6236effd884598778990e4c4a9a, type: 3}
+      objectReference: {fileID: 2800000, guid: 4905a2fa11cdad0488ee95978d6e18ed, type: 3}
+    - target: {fileID: 4143054132915845329, guid: 97790ebc72a17d641bf1c4012abb10a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97790ebc72a17d641bf1c4012abb10a8, type: 3}
 --- !u!4 &1151628737 stripped
@@ -1183,6 +1188,87 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1001 &1498572210
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1816237933}
+    m_Modifications:
+    - target: {fileID: 5830674588469201897, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_Name
+      value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.007381916
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04211244
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b79dbcafa1d9ad4fbe48243006483da, type: 3}
+--- !u!4 &1498572211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5830674588469201900, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+    type: 3}
+  m_PrefabInstance: {fileID: 1498572210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1498572212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5830674588469201897, guid: 1b79dbcafa1d9ad4fbe48243006483da,
+    type: 3}
+  m_PrefabInstance: {fileID: 1498572210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590807426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1413,7 @@ Transform:
   - {fileID: 566081797}
   - {fileID: 1151628737}
   - {fileID: 1312271920}
+  - {fileID: 1498572211}
   m_Father: {fileID: 1590807427}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1340,6 +1427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2002511259}
   - component: {fileID: 2002511258}
+  - component: {fileID: 2002511260}
   m_Layer: 8
   m_Name: MicrogameController
   m_TagString: Untagged
@@ -1360,9 +1448,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   microgameSubScene: {fileID: 0}
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 30c4f00756ca4b74e962b716a2a3c1fd, type: 3}
   winOnTimeOut: 0
   timeLimitSeconds: 5
+  microgameTimescale: 1
+  timer: {fileID: 1498572212}
 --- !u!4 &2002511259
 Transform:
   m_ObjectHideFlags: 0
@@ -1377,6 +1467,102 @@ Transform:
   m_Father: {fileID: 1590807427}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2002511260
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002511257}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2040779246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freezeOnVictory: 1
   freezeOnLoss: 0
+  speedModifier: 2
 --- !u!212 &2040779248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1490,7 +1677,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.01, y: 0.25}
   serializedVersion: 2
-  m_Radius: 0.03
+  m_Radius: 0.1
 --- !u!50 &2040779251
 Rigidbody2D:
   serializedVersion: 4
