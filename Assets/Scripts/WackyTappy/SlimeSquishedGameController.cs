@@ -7,6 +7,7 @@ public class SlimeSquishedGameController : MonoBehaviour
 
  
     public static int numOfSquishedSlimes;
+    private int numOfSlimes = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class SlimeSquishedGameController : MonoBehaviour
     void Update()
     {
 
-        if (numOfSquishedSlimes == 2)
+        if (numOfSquishedSlimes == numOfSlimes)
         {
         MicrogameController.instance.WinMicrogame();
     }
