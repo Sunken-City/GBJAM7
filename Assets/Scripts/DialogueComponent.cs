@@ -9,6 +9,7 @@ public class DialogueComponent : MonoBehaviour
     public float interactRadius = 0.2f;
     public AudioClip soundEffect = null;
     public GameObject dialogueBoxPrefab;
+    public GameObject activateableObject;
     private GameObject _dialogueBoxInstance = null;
     private GameObject _playerReference = null;
     private int _dialogueIndex = 0;
@@ -48,6 +49,10 @@ public class DialogueComponent : MonoBehaviour
             }
             else
             {
+                if(activateableObject)
+                {
+                    activateableObject.SetActive(true);
+                }
                 Destroy(_dialogueBoxInstance);
                 _dialogueBoxInstance = null;
                 OverworldController.instance.freezeInput = false;
