@@ -6,6 +6,8 @@ public class DialogueComponent : MonoBehaviour
 {
     public string characterName;
     public string[] textBlocks;
+    public string[] secondaryTextBlocks = null;
+    public bool playOnce = false;
     public float interactRadius = 0.2f;
     public AudioClip soundEffect = null;
     public GameObject dialogueBoxPrefab;
@@ -49,14 +51,21 @@ public class DialogueComponent : MonoBehaviour
             }
             else
             {
-                ActivateableComponent activateableComponent = activateableObject.GetComponent<ActivateableComponent>();
-                if (activateableObject && activateableComponent)
+                if (activateableObject && activateableObject.GetComponent<ActivateableComponent>())
                 {
-                    activateableComponent.SetActive(true);
+                    activateableObject.GetComponent<ActivateableComponent>().SetActive(true);
                 }
                 Destroy(_dialogueBoxInstance);
                 _dialogueBoxInstance = null;
                 OverworldController.instance.freezeInput = false;
+                if(playOnce)
+                {
+                    enabled = false;
+                }
+                if(secondaryTextBlocks != null)
+                {
+                    textBlocks = secondaryTextBlocks;
+                }
             }
         }
     }
