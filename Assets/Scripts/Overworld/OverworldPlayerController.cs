@@ -76,4 +76,10 @@ public class OverworldPlayerController : MonoBehaviour
             SceneManager.LoadScene("Overworld");
         }
     }
+
+    public void Respawn()
+    {
+        usePlayerRespawnLocation = true;
+        SceneManager.LoadScene("Overworld");
+    }
 }

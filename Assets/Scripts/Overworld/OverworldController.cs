@@ -90,7 +90,6 @@ public class OverworldController : MonoBehaviour
         {
             Destroy(_currentPlayingSound);
             _currentPlayingSound = null;
-            Debug.Log("Tried to destroy current playing sound");
         }
         if (_currentMicrogameName != null)
         {
@@ -99,6 +98,7 @@ public class OverworldController : MonoBehaviour
         }
         else
         {
+            lastMicrogameState = MicrogameController.State.PLAYING;
             allowGangUp = true;
             if (battleFanfare)
             {
