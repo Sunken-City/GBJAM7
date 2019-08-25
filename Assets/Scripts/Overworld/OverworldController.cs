@@ -202,4 +202,15 @@ public class OverworldController : MonoBehaviour
         
         ChangeToState(State.PLAYING);
     }
+
+    public void SetBGM(AudioClip bgm)
+    {
+        _bgmSource.clip = bgm;
+        _bgmSource.Play();
+    }
+
+    public void SetBGMPitch(float scale)
+    {
+        _bgmSource.pitch = scale;
+    }
 }
