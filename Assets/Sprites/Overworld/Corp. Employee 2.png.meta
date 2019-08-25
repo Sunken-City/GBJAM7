@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 20a3f561f80a8e14ab1c62630bdfa78a
+guid: d480999fb8edc9f4480205f9a7bf4e82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -882246348154256868
-    second: Hazel Front_0
+      213: -766698183632781543
+    second: Corp. Employee 2_0
   - first:
-      213: -6195637220355286879
-    second: Hazel Front_1
+      213: -662773385210714231
+    second: Corp. Employee 2_1
   - first:
-      213: -6699381992308181246
-    second: Hazel Front_2
+      213: 8122571414886508285
+    second: Corp. Employee 2_2
   - first:
-      213: 6009506315708668312
-    second: Hazel Front_3
-  - first:
-      213: 5088699936861585603
-    second: Hazel Front_4
-  - first:
-      213: 3884986226997546971
-    second: Hazel Front_5
-  - first:
-      213: -4491166604085776468
-    second: Hazel Front_6
-  - first:
-      213: -201721941162350047
-    second: Hazel Front_7
+      213: 160493314593902996
+    second: Corp. Employee 2_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hazel Front_0
+      name: Corp. Employee 2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -136,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7511da5afc094bb40b450cdef6ed6e51
-      internalID: -882246348154256868
+      spriteID: 18aaf5ac566d36849a23d45b32f1d89f
+      internalID: -766698183632781543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hazel Front_1
+      name: Corp. Employee 2_1
       rect:
         serializedVersion: 2
         x: 18
@@ -157,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c0033e5e6808d41be4c6dd0e4d85dd
-      internalID: -6195637220355286879
+      spriteID: 72dceb97eaed6504faf5fedbbbea4524
+      internalID: -662773385210714231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hazel Front_2
+      name: Corp. Employee 2_2
       rect:
         serializedVersion: 2
         x: 36
@@ -178,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7ff59c8837112489ed5fce7598a400
-      internalID: -6699381992308181246
+      spriteID: 1468dce7ef6215e44bc8d8bb144119a0
+      internalID: 8122571414886508285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hazel Front_3
+      name: Corp. Employee 2_3
       rect:
         serializedVersion: 2
         x: 54
@@ -199,92 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1533275556cb0747871099bde167b58
-      internalID: 6009506315708668312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hazel Front_4
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5faafb3ac2d5d943b1960135c8ef2a5
-      internalID: 5088699936861585603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hazel Front_5
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 0
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce720489b12c217478a23de506fedf64
-      internalID: 3884986226997546971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hazel Front_6
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 0
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 443c5ccf4172d924fb1d850e4429b9c2
-      internalID: -4491166604085776468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hazel Front_7
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5212b53fa9f32fc43babeace90de45cb
-      internalID: -201721941162350047
+      spriteID: e4da0a4bcf33454478b69001dbdfcdd3
+      internalID: 160493314593902996
       vertices: []
       indices: 
       edges: []
