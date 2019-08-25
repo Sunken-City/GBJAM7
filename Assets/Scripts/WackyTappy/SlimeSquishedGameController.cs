@@ -22,6 +22,6 @@ public class SlimeSquishedGameController : MonoBehaviour
         if (numOfSquishedSlimes == numOfSlimes)
         {
         MicrogameController.instance.WinMicrogame();
-    }
+         }
     }
 }
