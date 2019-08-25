@@ -62,7 +62,7 @@ public class DialogueComponent : MonoBehaviour
                 {
                     enabled = false;
                 }
-                if(secondaryTextBlocks != null)
+                if(secondaryTextBlocks != null && secondaryTextBlocks.Length > 0)
                 {
                     textBlocks = secondaryTextBlocks;
                 }
