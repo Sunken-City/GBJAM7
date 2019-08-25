@@ -208,4 +208,9 @@ public class OverworldController : MonoBehaviour
         _bgmSource.clip = bgm;
         _bgmSource.Play();
     }
+
+    public void SetBGMPitch(float scale)
+    {
+        _bgmSource.pitch = scale;
+    }
 }

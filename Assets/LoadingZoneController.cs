@@ -28,6 +28,7 @@ public class LoadingZoneController : MonoBehaviour
             OverworldController.instance.SetBGM(newBackgroundMusic);
         }
         OverworldController.instance.microgameTimescale = newMicrogameTimescale;
+        OverworldController.instance.SetBGMPitch(newMicrogameTimescale);
         player.transform.position = new Vector2(x, y);
     }
 }
