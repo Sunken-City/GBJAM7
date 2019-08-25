@@ -325,7 +325,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.001, y: -0.02}
+  m_Offset: {x: 0, y: -0.01}
   serializedVersion: 2
   m_Radius: 0.03
 --- !u!114 &444740016
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 650378656}
   - component: {fileID: 650378655}
   m_Layer: 8
-  m_Name: slime 1
+  m_Name: slime1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -902,6 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be37f152c90f19c4581914eefe820f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slime1: {fileID: 0}
 --- !u!1 &1590807426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1162,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01, y: 0.3}
+  m_Offset: {x: 0.01, y: 0.25}
   serializedVersion: 2
   m_Radius: 0.03
 --- !u!50 &2040779251
