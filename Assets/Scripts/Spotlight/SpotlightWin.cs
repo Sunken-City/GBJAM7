@@ -9,9 +9,18 @@ public class SpotlightWin : MonoBehaviour
 
     private SpriteRenderer _targetSprite;
     private SpriteMask _spriteMask;
+    private Vector3[] targetPositions =
+    {
+        new Vector3(0.257f, 0.616f, 0),
+        new Vector3(0.495f, -0.44f, 0),
+        new Vector3(-0.456f, 0.54f, 0),
+        new Vector3(0.683f, 0.568f, 0),
+        new Vector3(-0.182f, 0.226f, 0)
+    };
     // Start is called before the first frame update
     void Start()
     {
+        target.transform.position = targetPositions[Random.Range(0, targetPositions.Length - 1)];
         _spriteMask = GetComponent<SpriteMask>();
         _targetSprite = target.GetComponent<SpriteRenderer>();
     }
