@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Smooch.unity
     guid: f75e9e0d436672942b65cc61cad33904
+  - enabled: 1
+    path: Assets/Scenes/Helicopter.unity
+    guid: 4ba7274b35e86f9419f353ebe6e2757c
   m_configObjects: {}
