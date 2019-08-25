@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Helicopter.unity
     guid: 4ba7274b35e86f9419f353ebe6e2757c
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 7a1a4fe74e43c1643a6447c0d2a9cda8
+  - enabled: 1
+    path: Assets/Scenes/Overworld.unity
+    guid: 813e50f102f0fa24782d4687b9558674
   m_configObjects: {}
