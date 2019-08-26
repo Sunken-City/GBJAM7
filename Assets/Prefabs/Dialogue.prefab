@@ -89,5 +89,6 @@ MonoBehaviour:
   playOnce: 0
   interactRadius: 0.25
   soundEffect: {fileID: 0}
-  dialogueBoxPrefab: {fileID: 0}
+  dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
+    type: 3}
   activateableObject: {fileID: 0}
