@@ -17,7 +17,7 @@ public class Land : MonoBehaviour
     {
         if (!MicrogameController.instance.HasFinished())
         {
-            transform.position += new Vector3(0.0016f, -.005f, 0f);
+            transform.position += new Vector3(0.0016f * MicrogameController.instance.microgameTimescale, -.005f * MicrogameController.instance.microgameTimescale, 0f);
         }
 
         if(transform.position.y <= landHeight && !MicrogameController.instance.HasFinished())
