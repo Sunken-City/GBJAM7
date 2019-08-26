@@ -30867,6 +30867,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &86973493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31257,6 +31258,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &223983853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42188,6 +42190,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &387860627
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42468,6 +42471,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &432009152
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42716,6 +42720,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &487477772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45073,6 +45078,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &645515823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48195,6 +48201,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &802119006
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48329,6 +48336,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &826976754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48889,6 +48897,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &874783457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49358,6 +49367,11 @@ PrefabInstance:
       propertyPath: textBlocks.Array.data[5]
       value: Playing work was fun, sis! Let's go home!
       objectReference: {fileID: 0}
+    - target: {fileID: 8711459465586295242, guid: a2923450b1465924c8741209e62fcf2a,
+        type: 3}
+      propertyPath: endToCredits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2923450b1465924c8741209e62fcf2a, type: 3}
 --- !u!1001 &1033987791
@@ -49646,6 +49660,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1104820541
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49789,6 +49804,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1136876233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50531,18 +50547,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96b9958cd34aaed4381d853fa9347dbd, type: 3}
---- !u!1 &1479309723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 519420028, guid: 86c56809a2047e645afa658f43b2e861,
-    type: 3}
-  m_PrefabInstance: {fileID: 1588740857}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1479309724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1362040484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51535,6 +51539,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1546130914
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51816,24 +51821,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1588740857}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1588740860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 519420028, guid: 86c56809a2047e645afa658f43b2e861,
-    type: 3}
-  m_PrefabInstance: {fileID: 1588740857}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1588740861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588740860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55755044b8e919f419065bd1887707c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1604839735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52168,6 +52155,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1639494024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52729,6 +52717,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1758828848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52958,6 +52947,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1770760034
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53068,6 +53058,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1794218250
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53585,6 +53576,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &1964740997
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54051,6 +54043,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &2042230500
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54417,6 +54410,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &2101696239
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54799,6 +54793,7 @@ MonoBehaviour:
   dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
     type: 3}
   activateableObject: {fileID: 0}
+  endToCredits: 0
 --- !u!58 &2121299003
 CircleCollider2D:
   m_ObjectHideFlags: 0
