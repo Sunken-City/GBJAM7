@@ -107,7 +107,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7439750670997654011}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40064eb9629d68d4699a8d2912919b3c, type: 3}
   m_Name: 
@@ -118,7 +118,8 @@ MonoBehaviour:
   playOnce: 0
   interactRadius: 0.2
   soundEffect: {fileID: 0}
-  dialogueBoxPrefab: {fileID: 0}
+  dialogueBoxPrefab: {fileID: 3866777451733842133, guid: 8ecef12504a2aac44b07e1a8be0c4d05,
+    type: 3}
   activateableObject: {fileID: 0}
 --- !u!95 &9211536050949275787
 Animator:
