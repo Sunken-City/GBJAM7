@@ -25,7 +25,15 @@ public class DialogueBox : MonoBehaviour
         if(Screen.width != 160.0f)
         {
             float width = Screen.width;
-            GetComponent<CanvasScaler>().scaleFactor = (width / 160.0f);
+            float height = Screen.height;
+            if(height < width)
+            {
+                GetComponent<CanvasScaler>().scaleFactor = (height / 144.0f);
+            }
+            else
+            {
+                GetComponent<CanvasScaler>().scaleFactor = (width / 160.0f);
+            }
         }
 
         if(_frameCounter < _dialogueString.Length)
