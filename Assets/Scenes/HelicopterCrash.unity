@@ -270,7 +270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: land
+  m_Text: crash
 --- !u!222 &434759603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: land
+  m_Text: crash
 --- !u!222 &962618614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -797,7 +797,7 @@ GameObject:
   - component: {fileID: 1811139633}
   - component: {fileID: 1811139636}
   - component: {fileID: 1811139635}
-  - component: {fileID: 1811139637}
+  - component: {fileID: 1811139638}
   m_Layer: 8
   m_Name: Helicopter_0
   m_TagString: Untagged
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   landHeight: -0.35
-  shouldLand: 1
+  shouldLand: 0
 --- !u!114 &1811139636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingRotVelocity: 10
   freezeOnWin: 1
---- !u!114 &1811139637
+--- !u!114 &1811139638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1811139631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1379300757a6aa4ebb0d3e1a7dd1083, type: 3}
+  m_Script: {fileID: 11500000, guid: c73bbd3f26aea90468a89b89a2bb0684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
