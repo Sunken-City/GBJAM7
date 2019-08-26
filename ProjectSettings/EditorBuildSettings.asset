@@ -6,51 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PrototypeOverworld.unity
-    guid: 8010da179999e2f4bbfc4f8ff2459516
-  - enabled: 1
-    path: Assets/Scenes/LightEmUp.unity
-    guid: 4d2add4a6ddc37f48be5665e6672309b
-  - enabled: 1
-    path: Assets/Scenes/CreditConfidence.unity
-    guid: 6de331071bcd3594a9fa29d7e8e8ddee
-  - enabled: 1
-    path: Assets/Scenes/FrogDate.unity
-    guid: ec66bdd9acb4816428668c019e545b4a
-  - enabled: 1
-    path: Assets/Scenes/PrinceOfFreshAir.unity
-    guid: 0750debb15f0b0e4e9dcc1a09ab135f5
-  - enabled: 1
-    path: Assets/Scenes/Don'tDoIt.unity
-    guid: 0707facd923671646b73c2c02f25507f
-  - enabled: 1
-    path: Assets/Scenes/BirdYell.unity
-    guid: 3f9255e78c5e32844b428d1f12e70855
-  - enabled: 1
-    path: Assets/Scenes/Mislead.unity
-    guid: a7a9b86079664a443933a20d07826c84
-  - enabled: 1
-    path: Assets/Scenes/DiscoInferno.unity
-    guid: b900e4f0d1a12ff48897b24322a73222
-  - enabled: 1
-    path: Assets/Scenes/Smooch.unity
-    guid: f75e9e0d436672942b65cc61cad33904
-  - enabled: 1
-    path: Assets/Scenes/Helicopter.unity
-    guid: 4ba7274b35e86f9419f353ebe6e2757c
-  - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 7a1a4fe74e43c1643a6447c0d2a9cda8
   - enabled: 1
     path: Assets/Scenes/Overworld.unity
     guid: 813e50f102f0fa24782d4687b9558674
+  - enabled: 0
+    path: Assets/Scenes/LightEmUp.unity
+    guid: 4d2add4a6ddc37f48be5665e6672309b
+  - enabled: 0
+    path: Assets/Scenes/CreditConfidence.unity
+    guid: 6de331071bcd3594a9fa29d7e8e8ddee
+  - enabled: 0
+    path: Assets/Scenes/FrogDate.unity
+    guid: ec66bdd9acb4816428668c019e545b4a
+  - enabled: 0
+    path: Assets/Scenes/PrinceOfFreshAir.unity
+    guid: 0750debb15f0b0e4e9dcc1a09ab135f5
+  - enabled: 0
+    path: Assets/Scenes/Don'tDoIt.unity
+    guid: 0707facd923671646b73c2c02f25507f
+  - enabled: 0
+    path: Assets/Scenes/BirdYell.unity
+    guid: 3f9255e78c5e32844b428d1f12e70855
+  - enabled: 0
+    path: Assets/Scenes/Mislead.unity
+    guid: a7a9b86079664a443933a20d07826c84
   - enabled: 1
+    path: Assets/Scenes/DiscoInferno.unity
+    guid: b900e4f0d1a12ff48897b24322a73222
+  - enabled: 0
+    path: Assets/Scenes/Smooch.unity
+    guid: f75e9e0d436672942b65cc61cad33904
+  - enabled: 0
+    path: Assets/Scenes/Helicopter.unity
+    guid: 4ba7274b35e86f9419f353ebe6e2757c
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 82cf48ebb0c0d9d44aad6baaff3c7e29
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WackyTappy.unity
     guid: d5f545f2b8eb7aa4e89a573c84a3bd89
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Spotlight.unity
     guid: 36f680ed17288354c81f229b413472c5
   - enabled: 1
