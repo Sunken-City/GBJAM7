@@ -51796,7 +51796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 519420030, guid: 86c56809a2047e645afa658f43b2e861, type: 3}
       propertyPath: m_StretchFill
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 519420030, guid: 86c56809a2047e645afa658f43b2e861, type: 3}
       propertyPath: m_UpscaleRT
@@ -51816,6 +51816,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1588740857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1588740860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519420028, guid: 86c56809a2047e645afa658f43b2e861,
+    type: 3}
+  m_PrefabInstance: {fileID: 1588740857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1588740861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588740860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55755044b8e919f419065bd1887707c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1604839735
 PrefabInstance:
   m_ObjectHideFlags: 0
