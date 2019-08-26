@@ -26,7 +26,7 @@ public class TitleSelectorComponent : MonoBehaviour
             --_curOption;
             gameObject.GetComponent<SpriteRenderer>().transform.position = new Vector3(-1.21f, -0.013f, 0f); 
         }
-        if(Input.GetKey(KeyCode.J))
+        if(Input.GetKeyUp(KeyCode.J))
         {
             if(_curOption == 0)
             {
