@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueComponent : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DialogueComponent : MonoBehaviour
     public AudioClip soundEffect = null;
     public GameObject dialogueBoxPrefab;
     public GameObject activateableObject;
+    public bool endToCredits = false;
     private GameObject _dialogueBoxInstance = null;
     private GameObject _playerReference = null;
     private int _dialogueIndex = 0;
@@ -65,6 +67,10 @@ public class DialogueComponent : MonoBehaviour
                 if(secondaryTextBlocks != null && secondaryTextBlocks.Length > 0)
                 {
                     textBlocks = secondaryTextBlocks;
+                }
+                if (endToCredits)
+                {
+                    SceneManager.LoadScene("Credits", LoadSceneMode.Single);
                 }
             }
         }
