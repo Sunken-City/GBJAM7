@@ -16,11 +16,18 @@ public class DialogueBox : MonoBehaviour
     {
         _nameText = transform.Find("NameBox").Find("NameText").GetComponent<Text>();
         _dialogueText = transform.Find("TextBox").Find("DialogueText").GetComponent<Text>();
+        GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Screen.width != 160.0f)
+        {
+            float width = Screen.width;
+            GetComponent<CanvasScaler>().scaleFactor = (width / 160.0f);
+        }
+
         if(_frameCounter < _dialogueString.Length)
         {
             _dialogueText.text += _dialogueString.Substring(_frameCounter++, 1);
