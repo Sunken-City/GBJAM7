@@ -39003,12 +39003,12 @@ PrefabInstance:
         type: 3}
       propertyPath: heartObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1588740859}
     - target: {fileID: 6028708573874920095, guid: 86c56809a2047e645afa658f43b2e861,
         type: 3}
       propertyPath: heartObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1588740858}
     - target: {fileID: 6028708573874920095, guid: 86c56809a2047e645afa658f43b2e861,
         type: 3}
       propertyPath: heartObjects.Array.data[2]
@@ -39065,6 +39065,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86c56809a2047e645afa658f43b2e861, type: 3}
+--- !u!1 &1588740858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5772402429666123095, guid: 86c56809a2047e645afa658f43b2e861,
+    type: 3}
+  m_PrefabInstance: {fileID: 1588740857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1588740859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5325335437570121432, guid: 86c56809a2047e645afa658f43b2e861,
+    type: 3}
+  m_PrefabInstance: {fileID: 1588740857}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1604839735
 PrefabInstance:
   m_ObjectHideFlags: 0
