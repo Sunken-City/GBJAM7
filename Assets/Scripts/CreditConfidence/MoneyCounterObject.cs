@@ -25,6 +25,6 @@ public class MoneyCounterObject : MonoBehaviour
     {
         ++numCharges;
         GetComponent<Text>().text += "$";
-        GetComponent<ViolentShakingComponent>().shakeMagnitude += 0.05f;
+        GetComponent<ViolentShakingComponent>().shakeMagnitude += 0.007f;
     }
 }
